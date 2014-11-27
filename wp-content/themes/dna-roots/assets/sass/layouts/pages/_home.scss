@@ -1,0 +1,297 @@
+/*
+
+	FRONT PAGE SLIDER
+
+*/
+
+.carousel-fade {
+
+	background: #f0f0f0;
+
+	.carousel-indicators{
+
+		bottom: 50px;
+
+		li {
+
+			border: 2px solid white;
+			width: 12px;
+			height: 12px;
+			margin: 3px;
+
+		}
+
+	}
+
+  .carousel-inner {
+
+    .item {
+
+      opacity: 0;
+      transition-property: opacity;
+
+      .carousel-caption {
+
+      	left: 10%;
+		right: 10%;
+		width: 80%;
+      	bottom: auto;
+      	top: 40px;
+      	text-shadow: none;
+
+      	h3 {
+
+
+      		font-weight: bold;
+      		font-size: 5em;
+      		line-height: 1.333em;
+
+      	}
+
+      	button {
+
+      		font-size: 1.666em;
+      		padding: 20px 48px;
+      		font-weight: 300;
+      		margin-top: 30px;
+      		background: rgba(52,152,219,0.8); //$brand-primary
+
+      		&:hover {
+
+      			background: $brand-primary;
+
+      		}
+
+      	}
+
+      }
+
+    }
+
+    .active {
+
+      opacity: 1;
+
+    }
+
+    .active.left,
+    .active.right {
+
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+
+    }
+
+    .next.left,
+    .prev.right {
+
+      opacity: 1;
+
+    }
+
+  }
+
+  .carousel-control {
+
+    z-index: 2;
+
+  }
+
+}
+
+/*
+
+	FRONT PAGE CONTENT
+
+*/
+
+.home {
+
+	.wrap.container {
+
+		background: #f0f0f0;
+
+		section.row {
+
+			@extend .center-col;
+
+			article {
+
+				background: #f0f0f0;
+
+				&.has-post-thumbnail .entry-content {
+
+					min-height: 240px;
+
+				}
+
+				img.wp-post-image {
+
+					border-radius: 5px;
+					border: 1px solid #bababa;
+					float: right;
+					margin: 0 0 40px 40px;
+					position: relative;
+					top: -36px;
+
+				}
+
+				p {
+
+					color: #5f6f81;
+					font-size: 1.25em;
+					line-height: 1.666em;
+				}
+
+			}
+
+			h2 {
+
+				color: #595959;
+				margin: 80px 0 40px 0;
+				@extend .short-underline;
+
+			}
+
+		}
+
+	}
+
+	.additional-content {
+
+		background: #fff url(../img/sidebar-color-background.png) 50% 0;
+
+		aside {
+
+			background: #fafafa;
+
+			h2 {
+
+				font-size: 1.666em;
+				font-weight: 300;
+
+			}
+
+			.providers {
+
+				padding-right: 15px;
+
+				img {
+
+					border-radius: 100px;
+					display: block;
+					margin: 10px auto;
+
+				}
+
+				a {
+
+					color: #7495ab;
+					text-align: center;
+					font-weight: normal;
+
+				}
+
+				&.three-col a {
+
+					font-size: 0.9em;
+
+				}
+
+			}
+
+		}
+
+		.help-section {
+
+			background: #fff;
+			padding-left: 90px;
+			padding-bottom: 90px;
+
+			.col-md-4 {
+
+				div {
+
+					background: #ecf0f1;
+					padding: 80px 0px 74px 0px;
+					text-align: center;
+					position: relative;
+					font-size: 1.5em;
+					line-height: 1.5em;
+
+					i {
+
+						color: $brand-primary;
+						position: absolute;
+						top: 20px;
+						left: 50%;
+						width: 52px;
+						height: 52px;
+						margin-left: -26px;
+						text-align: center;
+						border: 2px solid $brand-primary;
+						border-radius: 26px;
+						font-size: 1em;
+						line-height: 52px;
+
+					}
+
+					a {
+
+						@extend .gray-button;
+						position: absolute;
+						bottom: 23px;
+						left: 23%;
+						width: 54%;
+
+					}
+
+				}
+
+				&:nth-of-type(even) div i {
+
+					color: $fuschia;
+					border-color: $fuschia;
+
+				}
+
+				&:nth-of-type(3n) div i {
+
+					color: $light-red;
+					border-color: $light-red;
+
+				}
+
+			}
+
+			.featured-blog-post {
+
+
+				h4 {
+
+					color: #595959;
+					font-size: 1.66em;
+
+				}
+
+				p {
+
+					color: #5f6f81;
+					font-size: 1.2em;
+					line-height: 1.666em;
+
+					&.entry-meta {
+
+						@extend .entry-meta;
+
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+}
