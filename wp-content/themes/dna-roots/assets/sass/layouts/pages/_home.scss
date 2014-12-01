@@ -296,6 +296,12 @@
 
 				background: #3497db;
 
+				.col-md-4 {
+
+					padding: 0;
+
+				}
+
 				ul {
 
 					padding: 0;
@@ -307,6 +313,35 @@
 						margin: 0;
 						display: none;
 						background: #4fa7e4;
+						font-size: 1.1em;
+						line-height: 1.333em;
+
+						strong {
+
+							color: #fff;
+							text-decoration: underline;
+							font-weight: normal;
+
+						}
+
+						a {
+
+							font-weight: normal;
+							display: block;
+							color: #fff;
+							text-decoration: underline;
+							margin-top: 20px;
+
+						}
+
+						img {
+
+							width: 100%;
+							max-width: 100%;
+							height: auto;
+							margin-bottom: 20px;
+
+						}
 
 						&.active {
 
@@ -324,6 +359,29 @@
 					ul li {
 
 						display: block;
+
+						&:hover {
+
+							cursor: pointer;
+							background: transparent;
+
+						}
+
+					}
+
+				}
+
+				.col-md-8 {
+
+					ul li {
+
+						display: none;
+
+						&.active {
+
+							display: block;
+
+						}
 
 					}
 

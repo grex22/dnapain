@@ -24,6 +24,220 @@
 
 	}
 
+?>
+
+			<div class="tabbed-section row">
+
+				<div class="col-md-4">
+
+					<ul>
+						<li class="active"><i class="fa fa-map-marker"></i> Location, Lo</li>
+						<li><i class="fa fa-map-marker"></i> Location, Lo</li>
+						<li><i class="fa fa-map-marker"></i> Location, Lo</li>
+						<li><i class="fa fa-map-marker"></i> Location, Lo</li>
+						<li><i class="fa fa-map-marker"></i> Location, Lo</li>
+					</ul>
+
+
+				</div>
+
+				<div class="col-md-8">
+
+					<ul>
+
+						<li class="active">
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
+
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<div class="col-md-6">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+
+								</div>
+
+								<div class="col-md-6">
+
+									<strong>Phone:</strong> 100-000-0000
+
+									<strong>Fax:</strong> 000-000-0000
+
+									<a href="#">Get Directions</a>
+
+									<a href="#">Schedule an Appointment</a>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li>
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
+
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<div class="col-md-6">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+
+								</div>
+
+								<div class="col-md-6">
+
+									<strong>Phone:</strong> 200-000-0000
+
+									<strong>Fax:</strong> 000-000-0000
+
+									<a href="#">Get Directions</a>
+
+									<a href="#">Schedule an Appointment</a>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li>
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
+
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<div class="col-md-6">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+
+								</div>
+
+								<div class="col-md-6">
+
+									<strong>Phone:</strong> 300-000-0000
+
+									<strong>Fax:</strong> 000-000-0000
+
+									<a href="#">Get Directions</a>
+
+									<a href="#">Schedule an Appointment</a>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li>
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
+
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<div class="col-md-6">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+
+								</div>
+
+								<div class="col-md-6">
+
+									<strong>Phone:</strong> 400-000-0000
+
+									<strong>Fax:</strong> 000-000-0000
+
+									<a href="#">Get Directions</a>
+
+									<a href="#">Schedule an Appointment</a>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li>
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
+
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<div class="col-md-6">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+
+								</div>
+
+								<div class="col-md-6">
+
+									<strong>Phone:</strong> 500-000-0000
+
+									<strong>Fax:</strong> 000-000-0000
+
+									<a href="#">Get Directions</a>
+
+									<a href="#">Schedule an Appointment</a>
+
+								</div>
+
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+<?php
+
 	$args =	array(
 
 		'post_type' 	=> 'post',

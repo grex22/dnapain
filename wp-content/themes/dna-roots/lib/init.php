@@ -65,3 +65,27 @@ function roots_widgets_init() {
   ));
 }
 add_action('widgets_init', 'roots_widgets_init');
+
+add_action( 'init', 'create_posttype' );
+
+function create_posttype() {
+  register_post_type( 'providers',
+    array(
+      'labels' => array(
+        'name' => __( 'Providers' ),
+        'singular_name' => __( 'Provider' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'providers'),
+      'supports' => array(
+        'title',
+        'author',
+        'excerpt',
+        'editor',
+        'thumbnail',
+        'revisions'
+      ),
+    )
+  );
+}
