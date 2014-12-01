@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change',
+6 verbose cache add   null ]
+7 verbose cache add name=undefined spec="grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change" args=["grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change',
+8 verbose parsed url   path: 'grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change',
+8 verbose parsed url   href: 'grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change' }
+9 verbose cache add name="grunt-modernizr" spec="https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change" args=["grunt-modernizr","https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change"]
+10 verbose parsed url { protocol: 'https:',
+10 verbose parsed url   slashes: true,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: 'github.com',
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: 'github.com',
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: '/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change',
+10 verbose parsed url   path: '/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change',
+10 verbose parsed url   href: 'https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change' }
+11 silly lockFile 43eaad33-l-feature-grunt-files-api-change https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change
+12 verbose lock https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change C:\Users\grex22\AppData\Roaming\npm-cache\43eaad33-l-feature-grunt-files-api-change.lock
+13 verbose addRemoteTarball [ 'https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change',
+13 verbose addRemoteTarball   null ]
+14 info retry fetch attempt 1 at 00:13:25
+15 verbose fetch to= C:\Users\grex22\AppData\Local\Temp\npm-4828-h9lvLW9B\1417238005293-0.16990779247134924\tmp.tgz
+16 http GET https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change
+17 http 404 https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change
+18 error fetch failed https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change
+19 silly lockFile 43eaad33-l-feature-grunt-files-api-change https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change
+20 silly lockFile 43eaad33-l-feature-grunt-files-api-change https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change
+21 error Error: 404 Not Found
+21 error     at WriteStream.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\fetch.js:57:12)
+21 error     at WriteStream.EventEmitter.emit (events.js:117:20)
+21 error     at fs.js:1598:14
+21 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:105:5
+21 error     at Object.oncomplete (fs.js:107:15)
+22 error If you need help, you may report this *entire* log,
+22 error including the npm and node versions, at:
+22 error     <http://github.com/npm/npm/issues>
+23 error System Windows_NT 6.1.7601
+24 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-modernizr@https://github.com/Modernizr/grunt-modernizr/tarball/feature/grunt-files-api-change"
+25 error cwd C:\Users\grex22\Dropbox\www-backup\dnapain\wp-content\themes\dna-roots
+26 error node -v v0.10.28
+27 error npm -v 1.4.9
+28 verbose exit [ 1, true ]
