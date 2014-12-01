@@ -2,30 +2,37 @@
 
 <div class="row providers">
 
-	<a href="#" class="col-md-6">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/Yeshvant-A-Navalgund-M.D.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
+<?php
 
-	<a href="#" class="col-md-6">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/Yeshvant-A-Navalgund-M.D.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
+	$args =	array(
 
-	<a href="#" class="col-md-6">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/Yeshvant-A-Navalgund-M.D.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
+		'post_type' 	=> 'providers',
+		'post_count' 	=> 4
 
-	<a href="#" class="col-md-6">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/Yeshvant-A-Navalgund-M.D.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
+	);
 
-	<a href="#" class="col-md-6">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/Yeshvant-A-Navalgund-M.D.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
+	$the_query = new WP_Query ( $args );
+
+	while ( $the_query->have_posts() ) {
+
+		$the_query->the_post();
+
+
+		echo '<a href="'.get_permalink().'" class="col-md-6">';
+
+		if ( has_post_thumbnail() ) {
+
+			the_post_thumbnail('full');
+
+		}
+
+		the_title();
+
+		echo '</a>';
+
+	}
+
+?>
 
 </div>
 
@@ -47,24 +54,5 @@
 	</a>
 
 </div>
-
-<h2>Practice Introduction</h2>
-
-<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/video-placeholder.png">
-
-<h2>Patient Education</h2>
-
-<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/patient-ed-placeholder.jpg">
-
-<h2>Our Values</h2>
-
-<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/video-placeholder.png">
-
-
-<?php
-
-
-
-?>
 
 <?php dynamic_sidebar('sidebar-frontpage'); ?>

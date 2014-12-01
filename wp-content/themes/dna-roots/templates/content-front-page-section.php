@@ -26,6 +26,8 @@
 
 ?>
 
+			<h2>Our Clinics</h2>
+
 			<div class="tabbed-section row">
 
 				<div class="col-md-4">
@@ -68,46 +70,9 @@
 
 								<div class="col-md-6">
 
-									<strong>Phone:</strong> 100-000-0000
+									<p><strong>Phone:</strong> 100-000-0000</p>
 
-									<strong>Fax:</strong> 000-000-0000
-
-									<a href="#">Get Directions</a>
-
-									<a href="#">Schedule an Appointment</a>
-
-								</div>
-
-							</div>
-
-						</li>
-
-						<li>
-
-							<div class="row">
-
-								<div class="col-md-12">
-
-									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
-
-								</div>
-
-							</div>
-
-							<div class="row">
-
-								<div class="col-md-6">
-
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua.
-
-								</div>
-
-								<div class="col-md-6">
-
-									<strong>Phone:</strong> 200-000-0000
-
-									<strong>Fax:</strong> 000-000-0000
+									<p><strong>Fax:</strong> 000-000-0000</p>
 
 									<a href="#">Get Directions</a>
 
@@ -142,46 +107,9 @@
 
 								<div class="col-md-6">
 
-									<strong>Phone:</strong> 300-000-0000
+									<p><strong>Phone:</strong> 200-000-0000</p>
 
-									<strong>Fax:</strong> 000-000-0000
-
-									<a href="#">Get Directions</a>
-
-									<a href="#">Schedule an Appointment</a>
-
-								</div>
-
-							</div>
-
-						</li>
-
-						<li>
-
-							<div class="row">
-
-								<div class="col-md-12">
-
-									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
-
-								</div>
-
-							</div>
-
-							<div class="row">
-
-								<div class="col-md-6">
-
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua.
-
-								</div>
-
-								<div class="col-md-6">
-
-									<strong>Phone:</strong> 400-000-0000
-
-									<strong>Fax:</strong> 000-000-0000
+									<p><strong>Fax:</strong> 000-000-0000</p>
 
 									<a href="#">Get Directions</a>
 
@@ -216,9 +144,83 @@
 
 								<div class="col-md-6">
 
-									<strong>Phone:</strong> 500-000-0000
+									<p><strong>Phone:</strong> 300-000-0000</p>
 
-									<strong>Fax:</strong> 000-000-0000
+									<p><strong>Fax:</strong> 000-000-0000</p>
+
+									<a href="#">Get Directions</a>
+
+									<a href="#">Schedule an Appointment</a>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li>
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
+
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<div class="col-md-6">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+
+								</div>
+
+								<div class="col-md-6">
+
+									<p><strong>Phone:</strong> 400-000-0000</p>
+
+									<p><strong>Fax:</strong> 000-000-0000</p>
+
+									<a href="#">Get Directions</a>
+
+									<a href="#">Schedule an Appointment</a>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li>
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
+
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<div class="col-md-6">
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+
+								</div>
+
+								<div class="col-md-6">
+
+									<p><strong>Phone:</strong> 500-000-0000</p>
+
+									<p><strong>Fax:</strong> 000-000-0000</p>
 
 									<a href="#">Get Directions</a>
 
