@@ -9,7 +9,7 @@ $light-red: #ed1f5e;
 $orange:	#fbaf5d;
 $purple:	#a186be;
 $peachish:	#ef6b5e;
-
+$slate:		#5f6f81;
 
 /* latin-ext */
 
@@ -235,7 +235,15 @@ footer.content-info {
 		float: none;
 		background: transparent;
 
-		.col-md-4 {
+		.col-md-3, .col-md-4 {
+
+			p {
+
+				color: $slate;
+				font-family: "OpenSans", "Open Sans", $font-family-sans-serif;
+				margin-bottom: 20px;
+
+			}
 
 			ul {
 
@@ -248,6 +256,12 @@ footer.content-info {
 
 				color: #151515;
 				font-size: 1.2em;
+
+			}
+
+			.btn, button {
+
+				margin-bottom: 20px;
 
 			}
 
@@ -274,7 +288,7 @@ footer.content-info {
 						a {
 
 							color: $brand-primary;
-							font-size: 1em;
+							font-size: 1.1em;
 
 						}
 
@@ -285,6 +299,8 @@ footer.content-info {
 			}
 
 			&.additional-info {
+
+				font-size: 1.1em;
 
 				div a {
 
@@ -308,6 +324,20 @@ footer.content-info {
 						color: lighten(#bdc3c7,5%);
 
 					}
+
+				}
+
+			}
+
+			&.locations {
+
+				font-size: 1.1em;
+
+				li {
+
+					padding: 16px 0 0 0;
+					color: $slate;
+					font-family: "OpenSans", "Open Sans", $font-family-sans-serif;
 
 				}
 
@@ -345,7 +375,7 @@ footer.content-info {
 
 	position: relative;
 
-	&.short-underline:after {
+	&:after {
 
 		content: "";
 		position: absolute;

@@ -209,6 +209,24 @@
 			padding-left: 90px;
 			padding-bottom: 90px;
 
+			h2 {
+
+				@extend .fuschia;
+
+				&:nth-of-type(even) {
+
+					@extend .peach;
+
+				}
+
+				&:nth-of-type(3n) {
+
+					@extend .purple;
+
+				}
+
+			}
+
 			.col-md-4 {
 
 				div {
@@ -219,6 +237,7 @@
 					position: relative;
 					font-size: 1.5em;
 					line-height: 1.5em;
+					border-radius: 4px;
 
 					i {
 
@@ -249,17 +268,64 @@
 
 				}
 
-				&:nth-of-type(even) div i {
+				&:nth-of-type(even) {
 
-					color: $fuschia;
-					border-color: $fuschia;
+					div i {
+
+						color: $fuschia;
+						border-color: $fuschia;
+
+					}
 
 				}
 
-				&:nth-of-type(3n) div i {
+				&:nth-of-type(3n) {
 
-					color: $light-red;
-					border-color: $light-red;
+					div i {
+
+						color: $light-red;
+						border-color: $light-red;
+
+					}
+
+				}
+
+			}
+
+			.tabbed-section {
+
+				background: #3497db;
+
+				ul {
+
+					padding: 0;
+
+					li {
+
+						color: #fff;
+						padding:16px 20px;
+						margin: 0;
+						display: none;
+						background: #4fa7e4;
+
+						&.active {
+
+							display: block;
+							background: transparent;
+
+						}
+
+					}
+
+				}
+
+				.col-md-4 {
+
+					ul li {
+
+						display: block;
+
+					}
 
 				}
 
