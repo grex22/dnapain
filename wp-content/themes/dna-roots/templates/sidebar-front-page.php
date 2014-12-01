@@ -1,24 +1,38 @@
-<h2>Our Providers</h2>
-
-<div class="row providers">
-
 <?php
+
+	$count = 7;
+
+	$cols = '6';
 
 	$args =	array(
 
 		'post_type' 	=> 'providers',
-		'post_count' 	=> 4
+
+		'post_count' 	=> $count
 
 	);
 
 	$the_query = new WP_Query ( $args );
 
-	while ( $the_query->have_posts() ) {
+	echo '<h2>Our Providers</h2>';
+
+	echo '<div class="row providers">';
+
+	while( $the_query->have_posts()) {
 
 		$the_query->the_post();
 
+		if( $count == 3 ) {
 
-		echo '<a href="'.get_permalink().'" class="col-md-6">';
+			$cols = '4';
+
+			echo '</div>';
+
+			echo '<div class="row providers three-col">';
+
+		}
+
+		echo '<a href="'.get_permalink().'" class="col-md-'.$cols.'">';
 
 		if ( has_post_thumbnail() ) {
 
@@ -30,29 +44,12 @@
 
 		echo '</a>';
 
+		$count--;
+
 	}
 
+	echo '</div>';
+
+	dynamic_sidebar('sidebar-frontpage');
+
 ?>
-
-</div>
-
-<div class="row providers three-col">
-
-	<a href="#" class="col-md-4">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/small-bio-placeholder.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
-
-	<a href="#" class="col-md-4">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/small-bio-placeholder.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
-
-	<a href="#" class="col-md-4">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/profiles/small-bio-placeholder.jpg">
-		Yeshvant A Navalgund M.D
-	</a>
-
-</div>
-
-<?php dynamic_sidebar('sidebar-frontpage'); ?>
