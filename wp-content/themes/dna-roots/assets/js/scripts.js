@@ -2372,7 +2372,7 @@ $(window).scroll(function(){
             $nav.data('size','small').stop().animate({
                 height:'60px',
             }, 300);
-            $nav.find('.navbar-header').fadeTo(100,.2).delay(100).fadeTo(100,1).addClass('minified');
+            $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).addClass('minified');
             $nav.find('nav').addClass('minified');
         }
     } else {
@@ -2380,7 +2380,7 @@ $(window).scroll(function(){
             $nav.data('size','big').stop().animate({
                 height:'136px',
             }, 300);
-            $nav.find('.navbar-header').fadeTo(100,.2).delay(100).fadeTo(100,1).removeClass('minified');
+            $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).removeClass('minified');
             $nav.find('nav').removeClass('minified');
         }  
     }

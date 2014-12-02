@@ -259,6 +259,41 @@ body.logged-in header{
   padding-top:116px;
 }
 
+.panel-group.dna-panel{
+  .panel + .panel {
+    margin-top: 9px!important;
+  }
+  .panel-heading.highlighted{
+    border-left: $brand-primary 4px solid;
+    border-right: $brand-primary 4px solid;
+  }
+  .panel-heading h4{
+    font-size:20px;
+    a{
+      text-decoration:none!important;
+      display:block;
+      padding: 11px;
+      margin: -11px;  
+      
+      &:before{
+        font-family:"FontAwesome";
+        content:"\f146";
+        margin-right:4px;
+        font-size:20px;
+        color:$brand-primary;
+        line-height: 17px;
+        vertical-align: middle;
+        
+        
+      }
+      &.collapsed:before{
+        content:"\f0fe";
+      }
+    }
+  }
+  .panel-heading:hover{background:#eee;}
+}
+
 
 /*
 
@@ -266,6 +301,13 @@ body.logged-in header{
 
 */
 
+.footer-btn{
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  
+  i{margin-top:3px;}
+}
 footer.content-info {
 
 	background: #e4e9ea;

@@ -56,9 +56,9 @@
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus venenatis, suscipit urna a, consectetur lorem.</p>
 
-				<a class="btn btn-primary" href="#">Patient Portal <i class="fa fa-arrow-right"></i></a>
+				<a class="btn btn-primary footer-btn" href="https://dnapain.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess">Patient Portal <i class="fa fa-arrow-right pull-right"></i></a>
 
-				<a class="btn btn-primary" href="#">Employee Portal <i class="fa fa-arrow-right"></i></a>
+				<a class="btn btn-primary footer-btn" href="https://employee.dnapain.com/">Employee Portal <i class="fa fa-arrow-right pull-right"></i></a>
 
 				<div>
 
@@ -76,10 +76,10 @@
 						</span>
 					</a>
 
-					<a href="#" target="_blank">
+					<a href="https://www.youtube.com/channel/UCqLUN7PNQEcClqJKYHI8iSA" target="_blank">
 						<span class="fa-stack fa-lg">
 						  <i class="fa fa-circle fa-stack-2x"></i>
-						  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+						  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
 						</span>
 					</a>
 
