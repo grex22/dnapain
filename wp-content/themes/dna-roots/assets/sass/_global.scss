@@ -65,6 +65,7 @@ $slate:		#5f6f81;
 body {
 
 	font-weight: 300;
+  
 
 }
 
@@ -84,23 +85,46 @@ a, button {
 
 */
 
+body.logged-in{
+  padding-top:32px;
+}
+body.logged-in header{
+  top:32px;
+}
 
 
 .navbar {
 
-	margin: 10px 0;
+	margin: 0px 0;
+  padding:10px 0 0 0;
+  box-shadow: 0 0 4px rgba(0,0,0,.3);
+  min-height:60px;
+  
+  .navbar-header{
+    .navbar-brand {
 
-	.navbar-brand {
+      height: 119px;
+      width: 235px;
+      background: url(../img/dna-advanced-pain-treatment-center-logo.png);
+      text-indent: -9999px;
 
-		height: 119px;
-		width: 286px;
-		background: url(../img/dna-advanced-pain-treatment-center-logo.png);
-		text-indent: -9999px;
+    }
+    &.minified{
+      .navbar-brand {
 
-	}
+        height: 55px;
+        width: 109px;
+        background: url(../img/dna-minified.png);
+        text-indent: -9999px;
+
+      }
+    }
+  }
+  
+  .row{overflow:hidden;}
 
 	nav {
-
+    transition:.5s all;
 		margin-top: 20px;
 
 		.col-md-9 {
@@ -117,7 +141,7 @@ a, button {
 		}
 
 		li a {
-
+      transition:.3s all;
 			padding-top: 30px;
 			margin-top: 18px;
 			font-size: 1.2em;
@@ -140,6 +164,16 @@ a, button {
 			}
 
 		}
+    
+    &.minified{
+      margin-top:-15px;
+      
+      li a{padding-top:25px;}
+      
+      .tel{display:none;}
+      
+      .col-md-3 button.btn{margin-top:22px}
+    }
 
 	}
 
@@ -214,6 +248,17 @@ a, button {
 	}
 
 }
+
+/*
+
+  CONTENT
+  
+*/
+
+.wrap.container.page_padding{
+  padding-top:116px;
+}
+
 
 /*
 
@@ -465,7 +510,7 @@ footer.content-info {
 
   .container {
 
-    width: 100%;
+    /*width: 100%;*/
 
   }
 

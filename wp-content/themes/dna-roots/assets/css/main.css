@@ -6131,16 +6131,40 @@ a, button {
 	HEADER
 
 */
-.navbar {
-  margin: 10px 0;
+body.logged-in {
+  padding-top: 32px;
 }
-.navbar .navbar-brand {
+
+body.logged-in header {
+  top: 32px;
+}
+
+.navbar {
+  margin: 0px 0;
+  padding: 10px 0 0 0;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  min-height: 60px;
+}
+.navbar .navbar-header .navbar-brand {
   height: 119px;
-  width: 286px;
+  width: 235px;
   background: url(../img/dna-advanced-pain-treatment-center-logo.png);
   text-indent: -9999px;
 }
+.navbar .navbar-header.minified .navbar-brand {
+  height: 55px;
+  width: 109px;
+  background: url(../img/dna-minified.png);
+  text-indent: -9999px;
+}
+.navbar .row {
+  overflow: hidden;
+}
 .navbar nav {
+  -webkit-transition: .5s all;
+       -o-transition: .5s all;
+          transition: .5s all;
   margin-top: 20px;
 }
 .navbar nav .col-md-9 {
@@ -6151,6 +6175,9 @@ a, button {
   width: 21%;
 }
 .navbar nav li a {
+  -webkit-transition: .3s all;
+       -o-transition: .3s all;
+          transition: .3s all;
   padding-top: 30px;
   margin-top: 18px;
   font-size: 1.2em;
@@ -6165,6 +6192,18 @@ a, button {
   width: 1.333em;
   margin-left: -0.6665em;
   font-size: 1.333em;
+}
+.navbar nav.minified {
+  margin-top: -15px;
+}
+.navbar nav.minified li a {
+  padding-top: 25px;
+}
+.navbar nav.minified .tel {
+  display: none;
+}
+.navbar nav.minified .col-md-3 button.btn {
+  margin-top: 22px;
 }
 .navbar .menu-locations a:before {
   content: "\f041";
@@ -6205,6 +6244,15 @@ a, button {
 .navbar .tel i {
   color: #999999;
   line-height: 1.5em;
+}
+
+/*
+
+  CONTENT
+  
+*/
+.wrap.container.page_padding {
+  padding-top: 116px;
 }
 
 /*
@@ -6360,7 +6408,7 @@ footer.content-info .container .col-md-3.locations li, footer.content-info .cont
 
 @media (min-width: 1200px) {
   .container {
-    width: 100%;
+    /*width: 100%;*/
   }
 }
 /*!
@@ -8557,6 +8605,10 @@ figure.alignnone {
 	FRONT PAGE SLIDER
 
 */
+#carousel {
+  padding-top: 116px;
+}
+
 .carousel-fade {
   background: #f0f0f0;
 }

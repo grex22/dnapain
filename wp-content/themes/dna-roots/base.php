@@ -12,9 +12,9 @@
     get_template_part('templates/header');
   ?>
 
-  <div class="wrap container" role="document">
+  <div class="wrap container<?php if(!is_front_page()) echo " page_padding";?>" role="document">
     <div class="content row">
-      <main class="main" role="main">
+      <main class="main col-md-8" role="main">
         <?php include roots_template_path(); ?>
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>

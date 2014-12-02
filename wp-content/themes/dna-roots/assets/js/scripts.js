@@ -2360,3 +2360,28 @@ var UTIL = {
 $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+$(function(){
+  $('header > .container > .col-md-12 > .row').data('size','big');
+});
+
+$(window).scroll(function(){
+    var $nav = $('header > .container > .col-md-12 > .row');
+    if ($('body').scrollTop() > 60) {
+        if ($nav.data('size') == 'big') {
+            $nav.data('size','small').stop().animate({
+                height:'60px',
+            }, 300);
+            $nav.find('.navbar-header').fadeTo(100,.2).delay(100).fadeTo(100,1).addClass('minified');
+            $nav.find('nav').addClass('minified');
+        }
+    } else {
+        if ($nav.data('size') == 'small') {
+            $nav.data('size','big').stop().animate({
+                height:'136px',
+            }, 300);
+            $nav.find('.navbar-header').fadeTo(100,.2).delay(100).fadeTo(100,1).removeClass('minified');
+            $nav.find('nav').removeClass('minified');
+        }  
+    }
+});
