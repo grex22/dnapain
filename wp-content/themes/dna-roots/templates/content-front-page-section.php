@@ -30,7 +30,7 @@
 
 			<div class="tabbed-section row">
 
-				<div class="col-md-4">
+				<div class="col-xs-4">
 
 					<ul>
 						<li class="active"><i class="fa fa-map-marker"></i> Location, Lo</li>
@@ -43,7 +43,7 @@
 
 				</div>
 
-				<div class="col-md-8">
+				<div class="col-xs-8">
 
 					<ul>
 
@@ -51,7 +51,7 @@
 
 							<div class="row">
 
-								<div class="col-md-12">
+								<div class="col-xs-12">
 
 									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
 
@@ -61,14 +61,14 @@
 
 							<div class="row">
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua.
 
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									<p><strong>Phone:</strong> 100-000-0000</p>
 
@@ -88,7 +88,7 @@
 
 							<div class="row">
 
-								<div class="col-md-12">
+								<div class="col-xs-12">
 
 									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
 
@@ -98,14 +98,14 @@
 
 							<div class="row">
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua.
 
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									<p><strong>Phone:</strong> 200-000-0000</p>
 
@@ -125,7 +125,7 @@
 
 							<div class="row">
 
-								<div class="col-md-12">
+								<div class="col-xs-12">
 
 									<img src="/wp-content/themes/dna-roots/assets/img/map-placeholder.jpg">
 
@@ -135,14 +135,14 @@
 
 							<div class="row">
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua.
 
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									<p><strong>Phone:</strong> 300-000-0000</p>
 
@@ -172,14 +172,14 @@
 
 							<div class="row">
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua.
 
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									<p><strong>Phone:</strong> 400-000-0000</p>
 
@@ -209,14 +209,14 @@
 
 							<div class="row">
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua.
 
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-xs-6">
 
 									<p><strong>Phone:</strong> 500-000-0000</p>
 
