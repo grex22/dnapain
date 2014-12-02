@@ -1,29 +1,21 @@
 @media (max-width: 1439px) {
 
 	.container {
-
-		width: 100%;
-
+		/*width: 100%;*/
 	}
 
 	.center-col {
-
 		width: 100%;
-
 	}
 
 	.navbar-header {
-
 		float: none;
-
 	}
 
 	.navbar .navbar-brand {
-
 		width: 100%;
 		background-size: contain;
 		background-repeat: no-repeat;
-
 	}
 
 }
@@ -244,14 +236,5 @@
 
 	}
 
-	footer.content-info {
-
-		.container .row .col-md-3 .btn {
-
-			margin-right: 50%;
-
-		}
-
-	}
 
 }

@@ -82,14 +82,16 @@ $(window).scroll(function(){
             }, 300);
             $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).addClass('minified');
             $nav.find('nav').addClass('minified');
+            $('#cta').addClass('minified');
         }
     } else {
         if ($nav.data('size') == 'small') {
             $nav.data('size','big').stop().animate({
-                height:'136px',
+                height:'119px',
             }, 300);
             $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).removeClass('minified');
             $nav.find('nav').removeClass('minified');
+            $('#cta').removeClass('minified');
         }  
     }
 });

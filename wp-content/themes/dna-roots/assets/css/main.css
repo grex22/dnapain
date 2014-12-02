@@ -6152,12 +6152,15 @@ body.logged-in header {
   width: 235px;
   background: url(../img/dna-advanced-pain-treatment-center-logo.png);
   text-indent: -9999px;
+  background-repeat: no-repeat;
+  margin-top: -5px;
 }
 .navbar .navbar-header.minified .navbar-brand {
   height: 55px;
   width: 109px;
   background: url(../img/dna-minified.png);
   text-indent: -9999px;
+  background-repeat: no-repeat;
 }
 .navbar .row {
   overflow: hidden;
@@ -6179,9 +6182,9 @@ body.logged-in header {
   -webkit-transition: .3s all;
        -o-transition: .3s all;
           transition: .3s all;
-  padding-top: 30px;
+  padding: 30px 12px 30px;
   margin-top: 18px;
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
 .navbar nav li a:before {
   font-family: 'FontAwesome';
@@ -6199,12 +6202,6 @@ body.logged-in header {
 }
 .navbar nav.minified li a {
   padding-top: 25px;
-}
-.navbar nav.minified .tel {
-  display: none;
-}
-.navbar nav.minified .col-md-3 button.btn {
-  margin-top: 22px;
 }
 .navbar .menu-locations a:before {
   content: "\f041";
@@ -6247,11 +6244,24 @@ body.logged-in header {
   line-height: 1.5em;
 }
 
+#cta.minified .tel {
+  display: none;
+}
+#cta.minified button.btn {
+  margin-top: 7px;
+  font-size: 16px;
+}
+
 /*
 
   CONTENT
   
 */
+.gray-page-header {
+  background: #f0f0f0;
+  padding-bottom: 20px;
+}
+
 .wrap.container.page_padding {
   padding-top: 116px;
 }
@@ -6290,6 +6300,35 @@ body.logged-in header {
 
 /*
 
+	PREFOOTER
+
+*/
+.prefooter {
+  background: #3498db;
+  color: white;
+  padding: 53px 0;
+}
+.prefooter h3 {
+  font-weight: 300;
+  font-size: 39px;
+  margin: 0px 0;
+}
+
+.btn.inverse-cta-btn {
+  color: #3498db;
+  background: white;
+  font-size: 23px;
+  margin-top: 7%;
+  width: 80%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.btn.inverse-cta-btn i {
+  margin-top: 4px;
+}
+
+/*
+
 	FOOTER
 
 */
@@ -6305,6 +6344,7 @@ body.logged-in header {
 footer.content-info {
   background: #e4e9ea;
   padding: 60px 0;
+  font-size: 15px;
 }
 footer.content-info .container {
   display: block;
@@ -8657,7 +8697,7 @@ figure.alignnone {
 
 */
 #carousel {
-  padding-top: 116px;
+  padding-top: 99px;
 }
 
 .carousel-fade {
@@ -8741,6 +8781,7 @@ figure.alignnone {
   border: 1px solid #bababa;
   float: right;
   margin: -80px 0 40px 40px;
+  max-width: 25%;
 }
 .home .wrap.container section.row article p {
   color: #5f6f81;
@@ -8750,7 +8791,7 @@ figure.alignnone {
 .home .wrap.container section.row h2, .home .wrap.container section.row aside h3 {
   color: #595959;
   margin: 0 0 40px 0;
-  padding-top: 80px;
+  padding-top: 35px;
 }
 .home .additional-content {
   background: #fff url(../img/sidebar-color-background.png) 50% 0;
@@ -8780,7 +8821,7 @@ figure.alignnone {
 }
 .home .additional-content .help-section {
   background: #fff;
-  padding-left: 90px;
+  padding-left: 75px;
   padding-bottom: 90px;
 }
 .home .additional-content .help-section .col-md-4 div {
@@ -8788,7 +8829,7 @@ figure.alignnone {
   padding: 80px 0px 74px 0px;
   text-align: center;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.5em;
   border-radius: 4px;
 }
@@ -8803,7 +8844,7 @@ figure.alignnone {
   text-align: center;
   border: 2px solid #3498db;
   border-radius: 26px;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 52px;
 }
 .home .additional-content .help-section .col-md-4 div a {
@@ -8886,7 +8927,7 @@ figure.alignnone {
 
 @media (max-width: 1439px) {
   .container {
-    width: 100%;
+    /*width: 100%;*/
   }
 
   .center-col, .home .wrap.container section.row {
@@ -9008,10 +9049,6 @@ figure.alignnone {
     position: relative;
     bottom: -6px;
     width: 80px;
-  }
-
-  footer.content-info .container .row .col-md-3 .btn {
-    margin-right: 50%;
   }
 }
 

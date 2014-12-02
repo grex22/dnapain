@@ -9,7 +9,7 @@
 		<div class="col-md-8 help-section">
 
 <?php
-
+  while(have_posts()): the_post();
 	if( have_rows( 'additional_sections' ) ) {
 
 		while ( have_rows( 'additional_sections' ) ) {
@@ -23,6 +23,7 @@
 		}
 
 	}
+  endwhile;
 
 ?>
 
@@ -277,11 +278,11 @@
 
 			    <h4 class="media-heading"><?php the_title(); ?></h4>
 
-			    <p class="entry-meta">Posted by DNA Pain in “General”</p>
+			    <!--<p class="entry-meta">Posted by DNA Pain in “General”</p>-->
 
 			    <p><?php the_excerpt(); ?></p>
 
-			    <a href="<?php the_permalink(); ?>"><i class="fa fa-arrow-right light-red"></i> Read More</a>
+			    <a href="<?php the_permalink(); ?>" class="btn btn-primary"><i class="fa fa-arrow-right fa-inverse"></i> Read More</a>
 
 
 			  </div>

@@ -107,6 +107,8 @@ body.logged-in header{
       width: 235px;
       background: url(../img/dna-advanced-pain-treatment-center-logo.png);
       text-indent: -9999px;
+      background-repeat:no-repeat;
+      margin-top:-5px;
 
     }
     &.minified{
@@ -116,6 +118,7 @@ body.logged-in header{
         width: 109px;
         background: url(../img/dna-minified.png);
         text-indent: -9999px;
+        background-repeat:no-repeat;
 
       }
     }
@@ -142,9 +145,9 @@ body.logged-in header{
 
 		li a {
       transition:.3s all;
-			padding-top: 30px;
+			padding: 30px 12px 30px;
 			margin-top: 18px;
-			font-size: 1.2em;
+			font-size: 1.05em;
 
 
 			&:before {
@@ -169,10 +172,7 @@ body.logged-in header{
       margin-top:-15px;
       
       li a{padding-top:25px;}
-      
-      .tel{display:none;}
-      
-      .col-md-3 button.btn{margin-top:22px}
+
     }
 
 	}
@@ -249,11 +249,21 @@ body.logged-in header{
 
 }
 
+#cta.minified{
+  .tel{display:none;}
+  button.btn{margin-top:7px;
+  font-size:16px;}
+}
+
 /*
 
   CONTENT
   
 */
+.gray-page-header{
+  background:#f0f0f0;
+  padding-bottom:20px;
+}
 
 .wrap.container.page_padding{
   padding-top:116px;
@@ -297,6 +307,39 @@ body.logged-in header{
 
 /*
 
+	PREFOOTER
+
+*/
+
+.prefooter{
+  background:$brand-primary;
+  color:white;
+  padding:53px 0;
+  
+  h3{
+    font-weight: 300;
+    font-size: 39px;
+    margin: 0px 0;
+  }
+}
+
+.btn.inverse-cta-btn{
+  color:$brand-primary;
+  background: white;
+  font-size: 23px;
+  margin-top: 7%;
+  width: 80%;
+  text-align:left;
+  text-transform:uppercase;
+  
+  i{
+    margin-top:4px;
+  }
+  
+}
+
+/*
+
 	FOOTER
 
 */
@@ -308,10 +351,12 @@ body.logged-in header{
   
   i{margin-top:3px;}
 }
+
 footer.content-info {
 
 	background: #e4e9ea;
 	padding: 60px 0;
+  font-size: 15px;
 
 	.container {
 
