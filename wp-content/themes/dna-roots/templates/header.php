@@ -8,7 +8,7 @@
       </div>
       <div class="col-lg-9 col-xs-6">
           <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-md-pull-12">
               <nav class="collapse navbar-collapse" role="navigation">
               <?php
                 if (has_nav_menu('primary_navigation')) :
