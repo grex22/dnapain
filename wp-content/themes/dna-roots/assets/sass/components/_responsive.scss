@@ -73,14 +73,14 @@
 
 		padding-top: 20px;
 
-		.navbar nav li a {
+		nav li a {
 
-			padding: 10px 40px;
+			padding: 10px 40px 10px 80px;
 			color: red;
 
 			&:before {
 
-				left: 15px;
+				left: 25px;
 				top: 10px;
 
 			}
@@ -92,6 +92,14 @@
 			.col-lg-9 {
 
 				margin-top: 120px;
+				right: 100%;
+
+				.navbar .menu-locations a:before {
+
+
+
+
+				}
 
 			}
 
