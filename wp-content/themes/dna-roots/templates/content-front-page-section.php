@@ -261,7 +261,15 @@
 
 			  <a class="media-left" href="<?php the_permalink(); ?>">
 
-			    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/post-placeholder.jpg">
+<?php
+
+	if ( has_post_thumbnail() ) {
+
+		the_post_thumbnail('full');
+
+	}
+
+?>
 
 			  </a>
 

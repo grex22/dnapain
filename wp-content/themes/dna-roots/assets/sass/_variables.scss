@@ -36,6 +36,8 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default; */
 
+$grid-float-breakpoint:				1170px;
+
 $navbar-height:                    116px !default;
 
 $navbar-default-color:             transparent;
