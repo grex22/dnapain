@@ -65,7 +65,7 @@ $slate:		#5f6f81;
 body {
 
 	font-weight: 300;
-  
+	font-size: 17px;
 
 }
 
@@ -273,67 +273,74 @@ footer.content-info {
 
 	.container {
 
-		@extend .col-md-10;
+		//@extend .col-md-10;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		float: none;
 		background: transparent;
 
-		.col-md-3, .col-md-4 {
+		.row {
 
-			p {
+			padding: 0 15px;
 
-				color: $slate;
-				font-family: "OpenSans", "Open Sans", $font-family-sans-serif;
-				margin-bottom: 20px;
+			.col-md-3, .col-md-4 {
 
-			}
+				p {
 
-			ul {
+					color: $slate;
+					font-family: "OpenSans", "Open Sans", $font-family-sans-serif;
+					margin-bottom: 20px;
 
-				list-style: none;
-				padding: 0;
+				}
 
-			}
+				ul {
 
-			h6 {
+					list-style: none;
+					padding: 0;
 
-				color: #151515;
-				font-size: 1.2em;
+				}
 
-			}
+				h6 {
 
-			.btn, button {
+					color: #151515;
+					font-size: 1.2em;
 
-				margin-bottom: 20px;
+				}
 
-			}
+				.btn, button {
 
-			#menu-footer-navigation {
+					margin-bottom: 20px;
+					margin-right: 20%;
 
-				list-style: none;
-				padding: 0;
+				}
 
-				li {
+				#menu-footer-navigation {
 
-				list-style: none;
-				padding: 16px 0 0 0;
+					list-style: none;
+					padding: 0;
 
-					a {
+					li {
 
-						color: #151515;
-						font-size: 1.2em;
-						font-weight: normal;
-
-					}
-
-					.sub-menu li {
+					list-style: none;
+					padding: 16px 0 0 0;
 
 						a {
 
-							color: $brand-primary;
-							font-size: 1.1em;
+							color: #151515;
+							font-size: 1.2em;
+							font-weight: normal;
+
+						}
+
+						.sub-menu li {
+
+							a {
+
+								color: $brand-primary;
+								font-size: 1.1em;
+
+							}
 
 						}
 
@@ -341,48 +348,48 @@ footer.content-info {
 
 				}
 
-			}
+				&.additional-info {
 
-			&.additional-info {
+					font-size: 1.1em;
 
-				font-size: 1.1em;
+					div a {
 
-				div a {
+						color: #bdc3c7;
 
-					color: #bdc3c7;
-
-					.fa-inverse {
-
-						color: #fff;
-
-						&:hover {
+						.fa-inverse {
 
 							color: #fff;
 
+							&:hover {
+
+								color: #fff;
+
+							}
+
 						}
 
-					}
+						&:hover {
 
-					&:hover {
+							text-decoration: none;
+							color: lighten(#bdc3c7,5%);
 
-						text-decoration: none;
-						color: lighten(#bdc3c7,5%);
+						}
 
 					}
 
 				}
 
-			}
+				&.locations {
 
-			&.locations {
+					font-size: 1.1em;
 
-				font-size: 1.1em;
+					li {
 
-				li {
+						padding-top: 16px;
+						color: $slate;
+						font-family: "OpenSans", "Open Sans", $font-family-sans-serif;
 
-					padding: 16px 0 0 0;
-					color: $slate;
-					font-family: "OpenSans", "Open Sans", $font-family-sans-serif;
+					}
 
 				}
 
@@ -408,7 +415,8 @@ footer.content-info {
 
 .center-col {
 
-	@extend .col-md-10;
+	//@extend .col-md-10;
+	width: 100%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -503,6 +511,12 @@ footer.content-info {
 
 	font-size: .9em;
 	font-variant: small-caps;
+
+}
+
+.hide-md {
+
+	display: none;
 
 }
 

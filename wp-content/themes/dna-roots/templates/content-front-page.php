@@ -2,7 +2,9 @@
 
   <div class="entry-content">
 
-  	<?php
+  	<h2 class="entry-title blue">About DNA Advanced Pain Management</h2>
+
+    <?php
 
     	if ( has_post_thumbnail() ) {
 
@@ -10,11 +12,9 @@
 
 		}
 
-	?>
+    	the_content();
 
-  	<h2 class="entry-title blue">About DNA Advanced Pain Management</h2>
-
-    <?php the_content(); ?>
+    ?>
 
   </div>
 

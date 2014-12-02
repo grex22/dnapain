@@ -4,32 +4,32 @@
       <div class="row">
         <div class="col-md-3">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+			<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
           </div>
         </div>
-        <div class="col-md-9">
-          <nav class="collapse navbar-collapse" role="navigation">
-            <div class="row">
-              <div class="col-md-9">
-                <?php
-                  if (has_nav_menu('primary_navigation')) :
-                    wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
-                  endif;
-                ?>
-              </div>
-              <div class="col-md-3">
-                <button type="button" class="btn btn-primary" href="#">Schedule</button>
-                <a href="tel:1-866-580-7246" class="tel"><i class="fa fa-phone pull-left"></i> 1 866 580-PAIN</a>
-              </div>
+      </div>
+      <div class="col-lg-9 col-xs-6">
+          <div class="row">
+            <div class="col-lg-9 col-md-pull-12">
+              <nav class="collapse navbar-collapse" role="navigation">
+              <?php
+                if (has_nav_menu('primary_navigation')) :
+                  wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+                endif;
+              ?>
+              </nav>
             </div>
-          </nav>
-        </div>
+            <div class="col-lg-3">
+              <button type="button" class="btn btn-primary" href="#">Schedule</button>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="tel:1-866-580-7246" class="tel"><i class="fa fa-phone pull-left"></i> 1 866 580-PAIN</a>
+            </div>
+          </div>
       </div>
     </div>
   </div>
