@@ -26,35 +26,25 @@
 
 				<ul class="row">
 
+				<?php if(get_field('locations', 'option')) { ?>
+
 					<h6>Our Locations</h6>
 
-					<li class="col-md-6">West Miffin, PA
-					<span>123-123-1234</span>
-					123 Test St., Test City, PA</li>
+					<?php while(has_sub_field('locations', 'option')) { ?>
 
-					<li class="col-md-6">West Miffin, PA
-					<span>123-123-1234</span>
-					123 Test St., Test City, PA</li>
+							<li class="col-xs-6">
 
-					<li class="col-md-6">West Miffin, PA
-					<span>123-123-1234</span>
-					123 Test St., Test City, PA</li>
+								<?php the_sub_field('location_title'); ?>
 
-					<li class="col-md-6">West Miffin, PA
-					<span>123-123-1234</span>
-					123 Test St., Test City, PA</li>
+								<span><?php the_sub_field('address'); ?></span>
 
-					<li class="col-md-6">West Miffin, PA
-					<span>123-123-1234</span>
-					123 Test St., Test City, PA</li>
+								<?php the_sub_field('phone'); ?>
 
-					<li class="col-md-6">West Miffin, PA
-					<span>123-123-1234</span>
-					123 Test St., Test City, PA</li>
+							</li>
 
-					<li class="col-md-6">West Miffin, PA
-					<span>123-123-1234</span>
-					123 Test St., Test City, PA</li>
+					<?php } ?>
+
+				<?php } ?>
 
 				</ul>
 
@@ -70,7 +60,7 @@
 
 				<a class="btn btn-primary" href="#">Employee Portal <i class="fa fa-arrow-right"></i></a>
 
-				<div class="">
+				<div>
 
 					<a href="#" target="_blank">
 						<span class="fa-stack fa-lg">
