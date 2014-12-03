@@ -11,8 +11,8 @@
     do_action('get_header');
     get_template_part('templates/header');
   ?>
-  <div class="gray-page-header">
-    <div class="wrap container page_padding" role="document">
+  <div class="gray-page-header home">
+    <div class="wrap container" role="document">
       <div class="content row">
         <section class="row">
           <main class="main col-md-8" role="main">
@@ -29,7 +29,9 @@
     <div class="content row">
       
       <main class="main col-md-8" role="main">
-        <?php include roots_template_path(); ?>
+        <div class="additional-content row">
+          <?php include roots_template_path(); ?>
+        </div>
       </main><!-- /.main -->
       
       <?php if (roots_display_sidebar()) : ?>
@@ -37,23 +39,10 @@
           <?php include roots_sidebar_path(); ?>
         </aside><!-- /.sidebar -->
       <?php endif; ?>
+      
     </div><!-- /.content -->
-    <?php //get_additional_content(); ?>
   </div><!-- /.wrap -->
   
-  <div class="wrap prefooter">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8">
-          <h3>You don’t have to live with your pain. Schedule an appointment with us today!</h3>
-        </div>
-        <div class="col-sm-4">
-          <a href="#" class="btn inverse-cta-btn"><i class="fa fa-arrow-right pull-right"></i> Contact Us </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <?php get_template_part('templates/footer'); ?>
 
   <?php wp_footer(); ?>
