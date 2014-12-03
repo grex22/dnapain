@@ -8661,7 +8661,7 @@ figure.alignnone {
     content: none !important;
   }
 }
-.banner .navbar-nav > li.menu-locations > a:before {
+.banner .navbar-nav > li.menu-locations > a:before, .banner .navbar-nav > li.menu-our-clinics > a:before {
   content: "\f041";
 }
 .banner .navbar-nav > li.menu-about > a:before {
