@@ -13,15 +13,7 @@
   ?>
   <div class="gray-page-header">
     <div class="wrap container page_padding" role="document">
-      <div class="content row">
-        <section class="row">
-          <main class="main col-md-8" role="main">
-            <?php while (have_posts()) : the_post(); ?>
-              <?php get_template_part('templates/page', 'header'); ?>
-            <?php endwhile; ?>
-          </main><!-- /.main -->
-        </section>
-      </div><!-- /.content -->
+      <?php get_template_part('templates/page', 'header'); ?>
     </div>
   </div>
   

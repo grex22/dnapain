@@ -1,3 +1,20 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
+
+  h3 {
+  	@extend .short-underline;
+  	margin-bottom: 20px;
+  }
+
+  ul {
+  	margin: 0;
+  	padding: 0;
+  	list-style-type: none;
+  	li {
+      padding: 5px 0;
+      + li {
+        border-top: 1px solid #f0f0f0;
+      }
+  	}
+  }
 }

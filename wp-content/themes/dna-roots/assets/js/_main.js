@@ -22,7 +22,11 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      // JavaScript to be fired on all pages
+      $('.share-btn').on( 'click', function( e ) {
+        e.preventDefault();
+
+        $('.add2any_share span').trigger('click');
+      });
     }
   },
   // Home page

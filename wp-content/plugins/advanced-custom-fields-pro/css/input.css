@@ -230,17 +230,20 @@ ul.acf-checkbox-list li label {
 .pac-container {
 	margin-left: -1px;
 	margin-top: -1px;
-	padding: 5px 0;
-	border-color: #DFDFDF;
+	border: #DFDFDF solid 1px !important;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2) !important;
 }
 
 .pac-container:after {
 	display: none;
 }
 
+.pac-container .pac-item:first-child {
+	border-top: 0 none;
+}
 .pac-container .pac-item {
-	padding: 5px;
-	margin: 0 5px;
+	padding: 5px 10px;
+	cursor: pointer;
 }
 
 
@@ -696,11 +699,6 @@ ul.acf-checkbox-list li label {
 	padding: 0;
 }
 
-.acf-image-uploader .hide-if-value p {
-	display: block;
-	margin: 0 !important;
-}
-
 .acf-image-uploader input.button {
 	width: auto;
 }
@@ -744,6 +742,7 @@ ul.acf-checkbox-list li label {
 	border: #DFDFDF solid 1px;
 	min-height: 84px;
 	position: relative;
+	background: #fff;
 }
 
 .acf-file-uploader .file-icon {
@@ -776,11 +775,6 @@ ul.acf-checkbox-list li label {
 
 .acf-file-uploader .file-info a {
 	text-decoration: none;
-}
-
-.acf-file-uploader .hide-if-value p {
-	display: block;
-	margin: 0 !important;
 }
 
 
