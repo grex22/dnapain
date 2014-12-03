@@ -10,7 +10,7 @@
       } else if ( is_archive() ) {
         echo roots_title();
       } else if ( is_singular( 'post' ) ) {
-        echo '<a href="/category/pain-management/">← Pain Management Blog</a>';
+        echo '<a href="' . home_url( '/category/pain-management/' ) . '">← Pain Management Blog</a>';
       } else {
         if(get_field('alternate_title')){
           the_field('alternate_title');
