@@ -6160,6 +6160,10 @@ body.logged-in header {
   padding-bottom: 90px;
 }
 
+.home .main-content-well main {
+  padding: 0 !important;
+}
+
 .panel-group.dna-panel .panel + .panel {
   margin-top: 9px !important;
 }
