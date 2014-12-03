@@ -84,7 +84,8 @@
       }
     }
     
-    &.menu-locations > a:before{
+    &.menu-locations > a:before,
+    &.menu-our-clinics > a:before,{
       content:"\f041";
     }
     &.menu-about > a:before{
