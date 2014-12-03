@@ -70,28 +70,26 @@ $(document).ready(UTIL.loadEvents);
 })(jQuery); // Fully reference jQuery after this point.
 
 $(function(){
-  $('header > .container > .col-md-12 > .row').data('size','big');
+  $('header.navbar').data('size','big');
 });
 
 $(window).scroll(function(){
-    var $nav = $('header > .container > .col-md-12 > .row');
-    if ($('body').scrollTop() > 60) {
-        if ($nav.data('size') == 'big') {
-            $nav.data('size','small').stop().animate({
-                height:'60px',
-            }, 300);
-            $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).addClass('minified');
-            $nav.find('nav').addClass('minified');
-            $('#cta').addClass('minified');
-        }
-    } else {
-        if ($nav.data('size') == 'small') {
-            $nav.data('size','big').stop().animate({
-                height:'119px',
-            }, 300);
-            $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).removeClass('minified');
-            $nav.find('nav').removeClass('minified');
-            $('#cta').removeClass('minified');
-        }  
+  var $nav = $('header.navbar');
+  if ($('body').scrollTop() > 60) {
+    if ($nav.data('size') == 'big') {
+      $nav.data('size','small').stop().animate({
+          height:'60px',
+      }, 200);
+      $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).addClass('minified');
+      $nav.addClass('minified');
     }
+  } else {
+    if ($nav.data('size') == 'small') {
+      $nav.data('size','big').stop().animate({
+          height:'119px',
+      }, 200);
+      $nav.find('.navbar-header').fadeTo(50,.2).delay(50).fadeTo(100,1).removeClass('minified');
+      $nav.removeClass('minified');
+    }  
+  }
 });

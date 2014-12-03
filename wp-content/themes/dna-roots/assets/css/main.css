@@ -3463,7 +3463,7 @@ tbody.collapse.in {
 
 .navbar {
   position: relative;
-  min-height: 116px;
+  min-height: 130px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -3600,10 +3600,10 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 48px 15px;
+  padding: 55px 15px;
   font-size: 18px;
   line-height: 20px;
-  height: 116px;
+  height: 130px;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -3622,8 +3622,8 @@ tbody.collapse.in {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 41px;
-  margin-bottom: 41px;
+  margin-top: 48px;
+  margin-bottom: 48px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -3648,7 +3648,7 @@ tbody.collapse.in {
 }
 
 .navbar-nav {
-  margin: 24px -15px;
+  margin: 27.5px -15px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -3686,8 +3686,8 @@ tbody.collapse.in {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
@@ -3699,8 +3699,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 41px;
-  margin-bottom: 41px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -3787,21 +3787,21 @@ tbody.collapse.in {
 }
 
 .navbar-btn {
-  margin-top: 41px;
-  margin-bottom: 41px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-  margin-top: 43px;
-  margin-bottom: 43px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
-  margin-top: 47px;
-  margin-bottom: 47px;
+  margin-top: 54px;
+  margin-bottom: 54px;
 }
 
 .navbar-text {
-  margin-top: 48px;
-  margin-bottom: 48px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 @media (min-width: 1170px) {
   .navbar-text {
@@ -6138,14 +6138,6 @@ body.logged-in {
 
 body.logged-in header {
   top: 32px;
-}
-
-#cta.minified .tel {
-  display: none;
-}
-#cta.minified button.btn {
-  margin-top: 7px;
-  font-size: 16px;
 }
 
 /*
@@ -8574,6 +8566,184 @@ figure.alignnone {
   }
 }
 
+.banner {
+  background: white;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.banner .navbar-brand {
+  text-indent: -9999px;
+  background: url("../img/dna-advanced-pain-treatment-center-logo.png");
+  width: 238px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+}
+.banner .navbar-toggle {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 49px;
+  padding-bottom: 54px;
+  border: solid #ccc;
+  border-width: 0 1px 0 1px;
+  border-radius: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #3498db;
+  height: 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.banner .navbar-toggle.phone-button {
+  line-height: 0;
+  border-right: 0;
+  padding-top: 44px;
+  font-size: 32px;
+}
+@media (max-width: 1170px) {
+  .banner .navbar-nav {
+    margin-top: 0px !important;
+  }
+}
+.banner .navbar-nav > li {
+  background: white;
+}
+@media (max-width: 1170px) {
+  .banner .navbar-nav > li {
+    border-top: 1px solid #ccc;
+  }
+}
+.banner .navbar-nav > li.active > a, .banner .navbar-nav > li > a:hover {
+  background: #f8f8f8;
+  border-bottom: 4px solid #3498db;
+}
+.banner .navbar-nav > li > a {
+  padding-top: 73px;
+  padding-bottom: 32px;
+  border-bottom: 4px solid white;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-size: 18px;
+}
+@media (max-width: 1200px) and (min-width: 1170px) {
+  .banner .navbar-nav > li > a {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+.banner .navbar-nav > li > a:before {
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 44%;
+  top: 30px;
+  font-size: 24px;
+  color: #3498db;
+  -o-transition: .3s all;
+     transition: .3s all;
+  -webkit-transition: .3s all;
+  -moz-transition: .3s all;
+}
+@media (max-width: 1169px) {
+  .banner .navbar-nav > li > a {
+    padding: 10px;
+  }
+  .banner .navbar-nav > li > a:before {
+    content: none !important;
+  }
+}
+.banner li.menu-locations a:before {
+  content: "\f041";
+}
+.banner li.menu-about a:before {
+  content: "\f02d";
+}
+.banner li.menu-your-pain a:before {
+  content: "\f1ae";
+}
+.banner li.menu-providers a:before {
+  content: "\f0f0";
+  left: 39%;
+}
+.banner li.menu-education a:before {
+  content: "\f19d";
+  left: 35%;
+}
+.banner li.menu-contact a:before {
+  content: "\f095";
+  left: 35%;
+}
+.banner.minified {
+  min-height: 74px;
+}
+.banner.minified .navbar-nav > li > a {
+  padding-top: 43px;
+  padding-bottom: 6px;
+}
+@media (max-width: 1170px) {
+  .banner.minified .navbar-nav > li > a {
+    padding: 10px !important;
+  }
+}
+.banner.minified .navbar-nav > li > a:before {
+  top: 15px;
+}
+.banner .navbar-header.minified .navbar-brand {
+  background: url("../img/dna-minified.png");
+  background-repeat: no-repeat;
+  padding: 18px;
+  margin-top: 10px;
+  height: auto;
+}
+.banner .navbar-header.minified .navbar-toggle {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  height: 74px;
+}
+
+.cta-block {
+  padding-top: 27px;
+  text-align: center;
+}
+.cta-block .btn {
+  display: block;
+  text-align: center;
+  width: auto;
+  padding: 6px 35px;
+  font-size: 20px;
+  margin: 0 auto 5px;
+}
+.cta-block .tel {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.cta-block .tel:hover {
+  text-decoration: none;
+}
+
+.minified .cta-block .tel {
+  display: none;
+}
+.minified .cta-block button.btn {
+  margin-top: -9px;
+  font-size: 20px;
+}
+
+#cta-sm {
+  display: none;
+  margin-top: 11px;
+  margin-right: 10px;
+}
+@media (max-width: 1169px) {
+  #cta-sm {
+    display: inline;
+  }
+}
+
+.minified #cta-sm {
+  margin-top: 0px;
+}
+
 .sidebar {
   position: relative;
   min-height: 1px;
@@ -8822,24 +8992,25 @@ figure.alignnone {
 }
 
 @media (max-width: 1439px) {
-  .container {
-    /*width: 100%;*/
-  }
-
-  .center-col, .home .wrap.container section.row {
-    width: 100%;
-  }
-
-  .navbar-header {
-    /*float: none;*/
-  }
-
-  .navbar .navbar-brand {
-    width: 100%;
-    -webkit-background-size: contain;
-            background-size: contain;
-    background-repeat: no-repeat;
-  }
+  /*
+  	.container {
+  		width: 100%;
+  	}
+  
+  	.center-col {
+  		width: 100%;
+  	}
+  
+  	.navbar-header {
+  		float: none;
+  	}
+  
+  	.navbar .navbar-brand {
+  		width: 100%;
+  		background-size: contain;
+  		background-repeat: no-repeat;
+  	}
+  */
 }
 @media (max-width: 1170px) and (min-width: 900px) {
   .home #carousel .carousel-inner .item img {
