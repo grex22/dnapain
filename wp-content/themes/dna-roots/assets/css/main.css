@@ -6140,110 +6140,6 @@ body.logged-in header {
   top: 32px;
 }
 
-.navbar {
-  margin: 0px 0;
-  padding: 10px 0 0 0;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  min-height: 60px;
-}
-.navbar .navbar-header .navbar-brand {
-  height: 119px;
-  width: 235px;
-  background: url(../img/dna-advanced-pain-treatment-center-logo.png);
-  text-indent: -9999px;
-  background-repeat: no-repeat;
-  margin-top: -5px;
-}
-.navbar .navbar-header.minified .navbar-brand {
-  height: 55px;
-  width: 109px;
-  background: url(../img/dna-minified.png);
-  text-indent: -9999px;
-  background-repeat: no-repeat;
-}
-.navbar .row {
-  overflow: hidden;
-}
-.navbar nav {
-  -webkit-transition: .5s all;
-       -o-transition: .5s all;
-          transition: .5s all;
-  margin-top: 20px;
-}
-.navbar nav .col-md-9 {
-  width: 79%;
-  padding-left: 7%;
-}
-.navbar nav .col-md-3 {
-  width: 21%;
-}
-.navbar nav li a {
-  -webkit-transition: .3s all;
-       -o-transition: .3s all;
-          transition: .3s all;
-  padding: 30px 12px 30px;
-  margin-top: 18px;
-  font-size: 1.05em;
-}
-.navbar nav li a:before {
-  font-family: 'FontAwesome';
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 1.333em;
-  width: 1.333em;
-  margin-left: -0.6665em;
-  font-size: 1.333em;
-}
-.navbar nav.minified {
-  margin-top: -15px;
-}
-.navbar nav.minified li a {
-  padding-top: 25px;
-}
-.navbar .menu-locations a:before {
-  content: "\f041";
-}
-.navbar .menu-about a:before {
-  content: "\f02d";
-}
-.navbar .menu-your-pain a:before {
-  content: "\f1ae";
-}
-.navbar .menu-providers a:before {
-  content: "\f0f0";
-}
-.navbar .menu-education a:before {
-  content: "\f19d";
-}
-.navbar .menu-contact a:before {
-  content: "\f095";
-}
-.navbar button {
-  width: 100%;
-  text-transform: uppercase;
-  margin: 15px 0;
-  font-size: 1.2em;
-  line-height: 1.2em;
-}
-.navbar .tel {
-  color: #000;
-  font-size: 1.2em;
-  float: right;
-  width: 100%;
-  text-align: right;
-}
-.navbar .tel:hover {
-  text-decoration: none;
-  color: #404040;
-}
-.navbar .tel i {
-  color: #999999;
-  line-height: 1.5em;
-}
-
 #cta.minified .tel {
   display: none;
 }
@@ -8935,7 +8831,7 @@ figure.alignnone {
   }
 
   .navbar-header {
-    float: none;
+    /*float: none;*/
   }
 
   .navbar .navbar-brand {
@@ -8964,35 +8860,70 @@ figure.alignnone {
   }
 
   header.navbar {
-    padding-top: 20px;
-  }
-  header.navbar .navbar nav li a {
-    padding: 10px 40px;
-    color: red;
-  }
-  header.navbar .navbar nav li a:before {
-    left: 15px;
-    top: 10px;
-  }
-  header.navbar .col-xs-6 .col-lg-9 {
-    margin-top: 120px;
-  }
-  header.navbar .col-xs-6 .col-lg-3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  header.navbar .col-xs-6 button {
-    width: 55%;
-    float: left;
-  }
-  header.navbar .col-xs-6 button.navbar-toggle {
-    width: auto;
-    float: right;
-  }
-  header.navbar .col-xs-6 .tel {
-    float: left;
-    text-align: left;
+    /*
+		padding-top: 20px;
+
+		.navbar nav li a {
+
+			padding: 10px 40px;
+			color: red;
+
+			&:before {
+
+				left: 15px;
+				top: 10px;
+
+			}
+
+		}
+
+		.col-xs-6 {
+
+			.col-lg-9 {
+
+				margin-top: 120px;
+
+			}
+
+			.col-lg-3 {
+
+				position: absolute;
+				top: 0;
+				right: 0;
+
+			}
+
+			.navbar-header {
+
+				a {
+
+				}
+
+			}
+
+			button {
+
+				width: 55%;
+				float: left;
+
+				&.navbar-toggle {
+
+					width: auto;
+					float: right;
+
+				}
+
+			}
+
+			.tel {
+
+				float: left;
+				text-align: left;
+
+			}
+
+		}
+    */
   }
 
   .home #carousel {
