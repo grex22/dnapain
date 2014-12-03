@@ -2,40 +2,30 @@
 
   if( have_rows( 'slides' ) ) {
 
-    $count = count ( get_field( 'slides' ) ) - 1;
+    $numslides = count ( get_field( 'slides' ) );
+    $i = 0;
 
 ?>
 
 <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-
   <!-- Indicators -->
-
   <ol class="carousel-indicators">
-
 <?php
-
-  while ( $count >= 0 ) {
-
+  while ( $i <= $numslides - 1 ) {
 ?>
-
-    <li data-target="#carousel" data-slide-to="<?php echo $count; ?>" class="<?php echo !$count ? 'active' : ''; ?>"></li>
-
+    <li data-target="#carousel" data-slide-to="<?php echo $i; ?>" class="<?php if($i == 0) echo 'active'; ?>"></li>
 <?php
-
-  $count--;
-
+  $i++;
   }
-
 ?>
-
   </ol>
 
+  <div class="carousel-inner" role="listbox">
 <?php
-
-    while ( have_rows( 'slides' ) ) {
-
+    $i = 0;
+    
+    while ( have_rows( 'slides' ) ):
       the_row();
-
       $title    = get_sub_field( 'title' );
       $button   = get_sub_field( 'button' );
       $href     = get_sub_field( 'href' );
@@ -44,30 +34,18 @@
 ?>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
-    <div class="item active">
-
+    <div class="item <?php if( $i == 0 ) echo "active"; ?>">
       <img src="<?php echo $img; ?>">
-
+      <div class="container">
       <div class="carousel-caption">
-
         <h3><?php echo $title; ?></h3>
-
         <button type="button" class="btn btn-primary" href="<?php echo $href; ?>"><?php echo $button; ?></button>
-
       </div>
-
+      </div>
     </div>
 
+<?php $i++; ?>
+<?php endwhile; ?>
   </div>
-
 </div>
-
-<?php
-
-    }
-
-  }
-
-?>
+<?php } ?>

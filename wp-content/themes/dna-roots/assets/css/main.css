@@ -6154,6 +6154,12 @@ body.logged-in header {
   padding-top: 116px;
 }
 
+.main-content-well main,
+.main-content-well aside {
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+
 .panel-group.dna-panel .panel + .panel {
   margin-top: 9px !important;
 }
@@ -8613,7 +8619,7 @@ figure.alignnone {
     border-top: 1px solid #ccc;
   }
 }
-.banner .navbar-nav > li.active > a, .banner .navbar-nav > li > a:hover {
+.banner .navbar-nav > li.active > a, .banner .navbar-nav > li > a:focus, .banner .navbar-nav > li.open > a, .banner .navbar-nav > li > a:hover {
   background: #f8f8f8;
   border-bottom: 4px solid #3498db;
 }
@@ -8651,26 +8657,37 @@ figure.alignnone {
     content: none !important;
   }
 }
-.banner li.menu-locations a:before {
+.banner .navbar-nav > li.menu-locations > a:before {
   content: "\f041";
 }
-.banner li.menu-about a:before {
+.banner .navbar-nav > li.menu-about > a:before {
   content: "\f02d";
 }
-.banner li.menu-your-pain a:before {
+.banner .navbar-nav > li.menu-your-pain > a:before {
   content: "\f1ae";
 }
-.banner li.menu-providers a:before {
+.banner .navbar-nav > li.menu-providers > a:before {
   content: "\f0f0";
   left: 39%;
 }
-.banner li.menu-education a:before {
+.banner .navbar-nav > li.menu-education > a:before {
   content: "\f19d";
   left: 35%;
 }
-.banner li.menu-contact a:before {
+.banner .navbar-nav > li.menu-contact > a:before {
   content: "\f095";
   left: 35%;
+}
+.banner ul.dropdown-menu {
+  min-width: 200px;
+}
+.banner ul.dropdown-menu > li + li {
+  border-top: 1px solid #ddd;
+}
+.banner ul.dropdown-menu a {
+  font-size: 17px;
+  line-height: 1.7em;
+  padding: 5px 20px;
 }
 .banner.minified {
   min-height: 74px;
@@ -8739,6 +8756,15 @@ figure.alignnone {
     display: inline;
   }
 }
+#cta-sm .btn {
+  padding: 6px 15px;
+}
+
+@media (max-width: 1169px) {
+  #cta-big {
+    display: none;
+  }
+}
 
 .minified #cta-sm {
   margin-top: 0px;
@@ -8769,9 +8795,6 @@ figure.alignnone {
 .carousel-fade {
   background: #f0f0f0;
 }
-.carousel-fade .carousel-indicators {
-  bottom: 50px;
-}
 .carousel-fade .carousel-indicators li {
   border: 2px solid white;
   width: 12px;
@@ -8794,12 +8817,12 @@ figure.alignnone {
 }
 .carousel-fade .carousel-inner .item .carousel-caption h3 {
   font-weight: bold;
-  font-size: 5em;
+  font-size: 3.5em;
   line-height: 1.333em;
 }
 .carousel-fade .carousel-inner .item .carousel-caption button {
-  font-size: 1.666em;
-  padding: 20px 48px;
+  font-size: 1.5em;
+  padding: 15px 40px;
   font-weight: 300;
   margin-top: 30px;
   background: rgba(52, 152, 219, 0.8);
@@ -8847,7 +8870,6 @@ figure.alignnone {
   border: 1px solid #bababa;
   float: right;
   margin: -80px 0 40px 40px;
-  max-width: 25%;
 }
 .home .wrap.container section.row article p {
   color: #5f6f81;
@@ -9098,7 +9120,7 @@ figure.alignnone {
   }
 
   .home #carousel {
-    height: 300px;
+    height: 500px;
     overflow: hidden;
   }
   .home #carousel .carousel-indicators {
@@ -9116,7 +9138,7 @@ figure.alignnone {
     position: relative;
   }
   .home #carousel .item .carousel-caption h3 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: 0;
   }
   .home #carousel .item .carousel-caption button {

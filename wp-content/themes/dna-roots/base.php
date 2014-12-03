@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div class="wrap container" role="document">
+  <div class="wrap container main-content-well" role="document">
     <div class="content row">
       <main class="main col-md-8" role="main">
         <?php include roots_template_path(); ?>

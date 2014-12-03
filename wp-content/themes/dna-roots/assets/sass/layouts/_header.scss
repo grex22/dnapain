@@ -43,6 +43,8 @@
       border-top:1px solid #ccc;
     }
     &.active>a,
+    &>a:focus,
+    &.open>a,
     &>a:hover{
       background:#f8f8f8;
       border-bottom:4px solid $brand-primary;
@@ -81,28 +83,42 @@
         &:before{content:none!important;}
       }
     }
+    
+    &.menu-locations > a:before{
+      content:"\f041";
+    }
+    &.menu-about > a:before{
+      content:"\f02d";
+    }
+    &.menu-your-pain > a:before{
+      content:"\f1ae";
+    }
+    &.menu-providers > a:before{
+      content:"\f0f0";
+      left:39%;
+    }
+    &.menu-education > a:before{
+      content:"\f19d";
+      left:35%;
+    }
+    &.menu-contact > a:before{
+      content:"\f095";
+      left:35%;
+    }
+    
   }
-  li.menu-locations a:before{
-    content:"\f041";
+  
+  ul.dropdown-menu{
+    min-width:200px;
+    &>li+li{border-top:1px solid #ddd;}
+    a{
+      font-size:17px;
+      line-height:1.7em;
+      padding:5px 20px; 
+    }
   }
-  li.menu-about a:before{
-    content:"\f02d";
-  }
-  li.menu-your-pain a:before{
-    content:"\f1ae";
-  }
-  li.menu-providers a:before{
-    content:"\f0f0";
-    left:39%;
-  }
-  li.menu-education a:before{
-    content:"\f19d";
-    left:35%;
-  }
-  li.menu-contact a:before{
-    content:"\f095";
-    left:35%;
-  }
+  
+  
   
   &.minified{
     min-height:74px;
@@ -172,6 +188,11 @@
   margin-top:11px;
   margin-right:10px;
   @media(max-width:1169px){display:inline}
+  .btn{padding: 6px 15px;}
+}
+
+#cta-big{
+  @media(max-width:1169px){display:none;}
 }
 
 .minified #cta-sm{margin-top:0px}
