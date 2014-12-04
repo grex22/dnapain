@@ -85,14 +85,10 @@ function create_posttype() {
         'singular_name' => __( 'Provider' )
       ),
       'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'providers'),
+      'has_archive' => false,
+      'rewrite' => false,
       'supports' => array(
         'title',
-        'author',
-        'excerpt',
-        'editor',
-        'thumbnail',
         'revisions'
       ),
     )

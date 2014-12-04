@@ -1,61 +1,28 @@
-<?php
+<section class="widget">
+	<h3>Our Providers</h3>
 
-	$count = 7;
+	<?php
+	$providers_page = get_page_by_title( 'Providers' );
+	$providers = get_field( 'providers', $providers_page->ID );
 
-	$cols = '6';
+	if( $providers ): ?>
+	    <ul id="providers" class="clearfix">
+	    <?php foreach( $providers as $post) : setup_postdata($post); ?>
+	        <?php
+	          $provider_photo = get_field( 'provider_photo', $post->ID );
+	          $classes = ( 'yes' == get_field( 'doctor', $post->ID ) ) ? 'col-md-6 large' : 'col-md-4 small';
+	          $slug = sanitize_title( get_the_title() );
+	        ?>
+	        <li class="<?php echo $classes; ?> text-center">
+	        	<a href="<?php echo home_url( '/providers/#' . $slug ); ?>">
+	        		<img src="<?php echo $provider_photo['sizes']['thumbnail']; ?>" alt="" />
+	        		<span class="text-center"><?php the_title(); ?></span>
+	        	</a>
+	        </li>
+	    <?php endforeach; ?>
+	    </ul>
+	    <?php wp_reset_postdata(); ?>
+	<?php endif; ?>
 
-	$args =	array(
-
-		'post_type' 	=> 'providers',
-
-		'post_count' 	=> $count
-
-	);
-
-	$the_query = new WP_Query ( $args );
-
-	echo '<a href="#" class="btn btn-primary hide-md"><i class="fa fa-youtube-play"></i> Our Providers</a>';
-
-	echo '<a href="#" class="btn btn-primary hide-md"><i class="fa fa-user-md"></i> Practice Introduction</a>';
-
-	echo '<a href="#" class="btn btn-primary hide-md"><i class="fa fa-graduation-cap"></i> Patient Education</a>';
-
-	echo '<h2>Our Providers</h2>';
-
-	echo '<div class="row providers">';
-
-	while( $the_query->have_posts()) {
-
-		$the_query->the_post();
-
-		if( $count == 3 ) {
-
-			$cols = '4';
-
-			echo '</div>';
-
-			echo '<div class="row providers three-col">';
-
-		}
-
-		echo '<a href="'.get_permalink().'" class="col-md-'.$cols.'">';
-
-		if ( has_post_thumbnail() ) {
-
-			the_post_thumbnail('full');
-
-		}
-
-		the_title();
-
-		echo '</a>';
-
-		$count--;
-
-	}
-
-	echo '</div>';
-
-	dynamic_sidebar('sidebar-frontpage');
-
-?>
+</section>
+<?php dynamic_sidebar('sidebar-frontpage'); ?>
