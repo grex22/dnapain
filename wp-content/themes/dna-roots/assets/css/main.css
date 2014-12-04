@@ -8814,6 +8814,10 @@ img {
   border-top: 1px solid #f0f0f0;
 }
 
+.home .wrap.container section.row aside .widget h3 {
+  padding-top: 0;
+}
+
 /*
 
 	FRONT PAGE SLIDER
@@ -9117,6 +9121,64 @@ img {
   display: none;
 }
 
+#providers {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#providers .title {
+  display: inline-block;
+}
+#providers .title h2 {
+  margin: 0 0 20px;
+}
+#providers img {
+  border-radius: 50%;
+  float: left;
+  margin: 0 25px 15px 0;
+}
+#providers li {
+  margin-bottom: 30px;
+}
+#providers li + li {
+  border-top: 1px solid #c0c0c0;
+  padding-top: 20px;
+}
+#providers .provider-btn {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  font-size: 16px;
+}
+#providers .provider-btn + .provider-btn {
+  margin-left: 15px;
+}
+#providers .provider-btn i {
+  margin-top: 3px;
+}
+
+.home #providers img {
+  display: block;
+  float: none;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+.home #providers .small img {
+  max-width: 80px;
+}
+.home #providers li {
+  min-height: 145px;
+  margin-bottom: 10px;
+}
+.home #providers li + li {
+  border: none;
+  padding-top: 0;
+}
+.home #providers a {
+  font-size: 14px;
+}
+
 @media (max-width: 1439px) {
   /*
   	.container {
@@ -9258,7 +9320,7 @@ img {
   .home aside {
     padding: 50px 0;
   }
-  .home aside h2, .home aside h3, .home aside div {
+  .home aside h2, .home aside h3, .home aside div, .home aside li {
     display: none;
   }
   .home aside a.btn.hide-md {
