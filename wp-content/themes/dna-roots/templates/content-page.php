@@ -3,9 +3,12 @@
 
 // check if the repeater field has rows of data
 if( have_rows('expandable_item') ): ?>
+  
   <?php $listtitle = get_field('list_title'); ?>
   <?php if($listtitle): ?>
     <h2><?php echo $listtitle; ?></h2>
+    <hr>
+  <?php else: ?>
     <hr>
   <?php endif; ?>
   <div class="panel-group dna-panel" id="accordion" role="tablist" aria-multiselectable="true">

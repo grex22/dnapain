@@ -2326,7 +2326,7 @@ var Roots = {
         var li_index = $(this).index();
         $('.tabbed-section ul li').removeClass();
         $(this).addClass('active');
-        $(this).closest('.row').find('.col-md-8 ul li:eq('+li_index+')').addClass('active');
+        $(this).closest('.row').find('.col-xs-8 ul li:eq('+li_index+')').addClass('active');
       });
     }
   },
