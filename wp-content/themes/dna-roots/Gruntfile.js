@@ -38,7 +38,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           style: 'expanded',
-          compass: true,
+          compass: false,
         },
         files: {
           'assets/css/main.css': [
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
       build: {
         options: {
           style: 'compressed',
-          compass: true,
+          compass: false,
         },
         files: {
           'assets/css/main.min.css': [

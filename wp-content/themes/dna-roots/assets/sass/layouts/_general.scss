@@ -8,3 +8,8 @@
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
   }
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}

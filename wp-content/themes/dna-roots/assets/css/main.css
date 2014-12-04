@@ -6132,7 +6132,7 @@ a, button {
 	HEADER
 
 */
-body.logged-in {
+body {
   padding-top: 32px;
 }
 
@@ -6201,10 +6201,6 @@ body.logged-in header {
 	PREFOOTER
 
 */
-footer.clinic-address {
-  font-size: 15px;
-}
-
 .prefooter {
   background: #3498db;
   color: white;
@@ -6334,18 +6330,22 @@ footer.content-info .container .row .col-md-3.locations li, footer.content-info 
   float: none;
 }
 
-.short-underline, .home .wrap.container section.row h2, .home .wrap.container section.row aside h3 {
+.short-underline, .sidebar h3, .home .wrap.container section.row h2, .home .wrap.container section.row aside h3 {
   position: relative;
 }
-.short-underline:after, .home .wrap.container section.row h2:after, .home .wrap.container section.row aside h3:after {
+.short-underline:after, .sidebar h3:after, .home .wrap.container section.row h2:after, .home .wrap.container section.row aside h3:after {
   content: "";
   position: absolute;
-  bottom: -14px;
+  bottom: -10px;
   left: 0;
   display: block;
   height: 4px;
   width: 28px;
   background: #d1d7d9;
+}
+
+.single h2.entry-title.short-underline:after, .single .home .wrap.container section.row h2.entry-title:after, .home .wrap.container section.row .single h2.entry-title:after {
+  left: 37px;
 }
 
 .gray:after {
@@ -6390,7 +6390,7 @@ footer.content-info .container .row .col-md-3.locations li, footer.content-info 
   background: #979da2;
 }
 
-.entry-meta, .home .additional-content .help-section .featured-blog-post p.entry-meta {
+.entry-meta, .home .additional-content .help-section .featured-blog-post p.entry-meta, .entry-meta time, .home .additional-content .help-section .featured-blog-post p.entry-meta time {
   font-size: .9em;
   font-variant: small-caps;
 }
@@ -8580,6 +8580,11 @@ figure.alignnone {
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .banner {
   background: white;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -8789,6 +8794,20 @@ figure.alignnone {
     float: left;
     width: 33.33333%;
   }
+}
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.sidebar ul li {
+  padding: 5px 0;
+}
+.sidebar ul li + li {
+  border-top: 1px solid #f0f0f0;
 }
 
 /*
@@ -9021,40 +9040,41 @@ figure.alignnone {
   line-height: 1.666em;
 }
 
-.patient-paths .col-md-4 a {
-  display: block;
-  padding: 95px 5px 30px 5px;
-  text-align: center;
-  background: #f6f6f6;
+.category main article, .blog main article {
+  padding-bottom: 20px;
+}
+.category main article h2, .blog main article h2 {
   font-size: 24px;
-  height: 180px;
-  border-radius: 4px;
 }
-.patient-paths .col-md-4 a:hover {
-  text-decoration: none;
-  background: #eee;
+.category main article .entry-meta, .category main article .home .additional-content .help-section .featured-blog-post p.entry-meta, .home .additional-content .help-section .featured-blog-post .category main article p.entry-meta, .blog main article .entry-meta, .blog main article .home .additional-content .help-section .featured-blog-post p.entry-meta, .home .additional-content .help-section .featured-blog-post .blog main article p.entry-meta {
+  font-weight: bold;
+  color: #5f6f81;
 }
-.patient-paths .col-md-4 a i {
-  color: #3498db;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  width: 52px;
-  height: 52px;
-  margin-left: -26px;
-  text-align: center;
-  border: 2px solid #3498db;
-  border-radius: 26px;
-  font-size: 20px;
-  line-height: 52px;
+.category main article + article, .blog main article + article {
+  border-top: 1px solid #c0c0c0;
+  padding-top: 20px;
 }
-.patient-paths .col-md-4 a i.fa-user {
-  color: #d305bd;
-  border-color: #d305bd;
+.category main article .attachment-post-thumbnail, .blog main article .attachment-post-thumbnail {
+  float: left;
+  width: 150px;
+  height: auto;
+  padding: 0 15px 15px 0;
 }
-.patient-paths .col-md-4 a i.fa-heart {
-  color: #ed1f5e;
-  border-color: #ed1f5e;
+
+.single-post .attachment-post-thumbnail {
+  padding: 15px 0;
+}
+.single-post .share-btn {
+  display: block;
+  width: 120px;
+  text-align: left;
+  font-size: 16px;
+}
+.single-post .share-btn i {
+  margin-top: 3px;
+}
+.single-post .social-shares .add2any_share span {
+  display: none;
 }
 
 @media (max-width: 1439px) {

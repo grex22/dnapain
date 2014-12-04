@@ -11,17 +11,9 @@
     do_action('get_header');
     get_template_part('templates/header');
   ?>
-  <div class="gray-page-header home"><!-- .home is a hack -->
-    <div class="wrap container<?php if(!is_front_page()) echo " page_padding";?>" role="document">
-      <div class="content row">
-        <section class="row">
-        <main class="main col-md-8" role="main">
-          <?php while (have_posts()) : the_post(); ?>
-            <?php get_template_part('templates/page', 'header'); ?>
-          <?php endwhile; ?>
-        </main><!-- /.main -->
-        </div>
-      </div><!-- /.content -->
+  <div class="gray-page-header">
+    <div class="wrap container page_padding" role="document">
+      <?php get_template_part('templates/page', 'header'); ?>
     </div>
   </div>
   
@@ -41,7 +33,6 @@
     <?php //get_additional_content(); ?>
   </div><!-- /.wrap -->
   
-  <?php if(!is_front_page()): ?>
   <div class="wrap prefooter">
     <div class="container">
       <div class="row">
@@ -54,8 +45,6 @@
       </div>
     </div>
   </div>
-  
-  <?php endif; ?>
 
   <?php get_template_part('templates/footer'); ?>
 

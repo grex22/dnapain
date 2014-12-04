@@ -85,7 +85,7 @@ a, button {
 
 */
 
-body.logged-in{
+body{
   padding-top:32px;
 }
 body.logged-in header{
@@ -376,7 +376,7 @@ footer.content-info {
 
 		content: "";
 		position: absolute;
-		bottom: -14px;
+		bottom: -10px;
 		left: 0;
 		display: block;
 		height: 4px;
@@ -385,6 +385,9 @@ footer.content-info {
 
 	}
 
+}
+.single h2.entry-title.short-underline:after {
+	left: 37px;
 }
 
 .gray:after {
@@ -451,7 +454,7 @@ footer.content-info {
 
 }
 
-.entry-meta {
+.entry-meta, .entry-meta time {
 
 	font-size: .9em;
 	font-variant: small-caps;

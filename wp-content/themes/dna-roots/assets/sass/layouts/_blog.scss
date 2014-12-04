@@ -1,0 +1,39 @@
+.category, .blog {
+	main article {
+		padding-bottom: 20px;
+		h2 {
+			font-size: 24px;
+		}
+		.entry-meta {
+			font-weight: bold;
+			color: #5f6f81;
+		}
+		+ article {
+			border-top: 1px solid #c0c0c0;
+			padding-top: 20px;
+		}
+		.attachment-post-thumbnail {
+			float: left;
+			width: 150px;
+			height: auto;
+			padding: 0 15px 15px 0;
+		}
+	}
+}
+
+.single-post {
+	.attachment-post-thumbnail {
+		padding: 15px 0;
+	}
+	.share-btn {
+		display: block;
+		width: 120px;
+		text-align: left;
+		font-size: 16px;
+
+		i{margin-top:3px;}
+	}
+	.social-shares .add2any_share span {
+		display: none;
+	}
+}

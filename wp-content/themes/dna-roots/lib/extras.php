@@ -20,3 +20,18 @@ function roots_wp_title($title) {
   return $title;
 }
 add_filter('wp_title', 'roots_wp_title', 10);
+
+
+/**
+ * Manage output of wp_title()
+ */
+function roots_wrap_base_cpts( $templates ) {
+  if ( ! is_front_page() ) {
+    return $templates;
+  }
+
+  array_unshift($templates, 'base-home.php');
+
+  return $templates;
+}
+add_filter('roots/wrap_base', 'roots_wrap_base_cpts');
