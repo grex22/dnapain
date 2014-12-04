@@ -10,7 +10,7 @@
       </button>
 			<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
       <div id="cta-sm" class="cta-block pull-right">
-        <button type="button" class="btn btn-primary"  href="<?php echo get_permalink(40); ?>">Schedule</button>
+        <a class="btn btn-primary"  href="<?php echo get_permalink(40); ?>">Schedule</a>
         <!--<a href="tel:1-866-580-7246" class="tel"><i class="fa fa-phone"></i> 1 866 580-PAIN</a>-->
       </div>
     </div>
@@ -22,7 +22,7 @@
         endif;
       ?>
     <div id="cta-big" class="cta-block pull-right">
-      <button type="button" class="btn btn-primary"  href="<?php echo get_permalink(40); ?>">Schedule</button>
+      <a class="btn btn-primary"  href="<?php echo get_permalink(40); ?>">Schedule</a>
       <div class="clearfix"></div>
       <a href="tel:1-866-580-7246" class="tel"><i class="fa fa-phone"></i> 1 866 580-PAIN</a>
     </div>

@@ -8795,7 +8795,7 @@ img {
 .minified .cta-block .tel {
   display: none;
 }
-.minified .cta-block button.btn {
+.minified .cta-block a.btn {
   margin-top: -9px;
   font-size: 20px;
 }
