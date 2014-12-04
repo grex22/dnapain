@@ -1,21 +1,22 @@
 <?php the_content(); ?>
 
+TEST CONTENT, GREG YOU CAN REMOVE ME
+
 <?php 
 
-$providers = get_field('locations');
+$locations = get_field('locations');
 
-if( $providers ): ?>
-    <ul id="providers">
-    <?php foreach( $providers as $post) : setup_postdata($post); ?>
+if( $locations ): ?>
+    <ul id="locations">
+    <?php foreach( $locations as $post) : setup_postdata($post); ?>
         <?php
         ?>
-        <li id="<?php echo $slug; ?>" class="row">
+        <li class="row">
 
           <div class="col-sm-2">
           </div>
 
           <div class="col-sm-6">
-            Locations Page Row
           </div>
 
           <div class="col-sm-4">

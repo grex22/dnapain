@@ -48,7 +48,7 @@ function roots_display_sidebar() {
     array(
       'is_404',
       'is_front_page',
-      array('is_page', array('providers') )
+      array('is_page', array('providers', 'locations') )
     ),
     /**
      * Page template checks (via is_page_template())
