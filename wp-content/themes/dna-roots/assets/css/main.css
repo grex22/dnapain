@@ -9066,6 +9066,9 @@ img {
   font-size: 1.2em;
   line-height: 1.666em;
 }
+.home .additional-content .help-section .featured-blog-post .attachment-thumbnail {
+  padding: 8px 10px 10px 0;
+}
 
 .patient-paths .col-md-4 a {
   display: block;

@@ -106,8 +106,8 @@
 
 		<?php
 		$args =	array(
-			'post_type'		=> 'post',
-			'post_count'	=> 1
+			'post_type'			=> 'post',
+			'posts_per_page'	=> 1
 		);
 
 		$the_query = new WP_Query ( $args );
@@ -117,17 +117,17 @@
 			<h2 class="orange">Blog</h2>
 
 			<div class="media featured-blog-post">
-				<a class="media-left" href="<?php the_permalink(); ?>">
-				<?php
-					if ( has_post_thumbnail() ) :
-						the_post_thumbnail('full');
-					endif;
-				?>
-				</a>
 				<div class="media-body">
 					<h4 class="media-heading"><?php the_title(); ?></h4>
 				    <!--<p class="entry-meta">Posted by DNA Pain in “General”</p>-->
-				    <p><?php the_excerpt(); ?></p>
+			    	<a class="pull-left" href="<?php the_permalink(); ?>">
+					<?php
+						if ( has_post_thumbnail() ) :
+							the_post_thumbnail('thumbnail');
+						endif;
+					?>
+					</a>
+					<?php the_excerpt(); ?>
 				    <a href="<?php the_permalink(); ?>" class="btn btn-primary"><i class="fa fa-arrow-right fa-inverse"></i> Read More</a>
 				</div>
 
