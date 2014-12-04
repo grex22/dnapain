@@ -29,6 +29,7 @@ if( $providers ): ?>
           </div>
           <div class="col-sm-4">
             <?php if ( $provider_video ) : ?>
+              <h4>Meet <?php the_title(); ?></h4>
               <div class="embed-responsive embed-responsive-16by9">
                 <?php echo wp_oembed_get( $provider_video, array() ); ?>
               </div>
