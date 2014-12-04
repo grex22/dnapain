@@ -18,9 +18,10 @@ if ( is_front_page() ) {
 		<ul>
 		<?php
 		$args = array(
-			'post_type' => 'locations'
+			'post_type'			=> 'locations',
+			'posts_per_page'	=> -1
 		);
-		$locations = get_pages( $args );
+		$locations = get_posts( $args );
 
 		foreach( $locations as $location ) {
 			?>
