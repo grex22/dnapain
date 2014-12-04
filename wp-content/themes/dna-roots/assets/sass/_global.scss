@@ -467,6 +467,21 @@ footer.content-info {
 
 }
 
+.gform_wrapper input[type=text],
+.gform_wrapper input[type=url],
+.gform_wrapper input[type=email],
+.gform_wrapper input[type=tel],
+.gform_wrapper input[type=number],
+.gform_wrapper input[type=password],
+.gform_wrapper select{
+  font-size:16px;
+  padding:8px 2px 8px 2px;
+}
+
+.gfield_label{
+  margin-top:17px;
+}
+
 @media (min-width: 1200px) {
 
   .container {
