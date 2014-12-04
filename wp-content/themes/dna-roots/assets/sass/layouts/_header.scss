@@ -5,6 +5,8 @@
     width:238px;
     margin-right:20px;
     background-repeat:no-repeat;
+    
+    
   }
   
   .navbar-toggle{
@@ -15,8 +17,8 @@
     border: solid #ccc;
     border-width: 0 1px 0 1px;
     border-radius: 0;
-    padding-right:20px;
-    padding-left:20px;
+    padding-right:15px;
+    padding-left:15px;
     color:$brand-primary;
     height:130px;
     box-sizing:border-box;
@@ -197,6 +199,12 @@
   margin-right:10px;
   @media(max-width:1169px){display:inline}
   .btn{padding: 6px 15px;}
+  
+  @media(max-width:575px){
+    .btn{
+      display:none;
+    }
+  }
 }
 
 #cta-big{

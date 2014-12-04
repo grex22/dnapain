@@ -8641,8 +8641,8 @@ img {
   border: solid #ccc;
   border-width: 0 1px 0 1px;
   border-radius: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   color: #3498db;
   height: 130px;
   -webkit-box-sizing: border-box;
@@ -8812,6 +8812,11 @@ img {
 }
 #cta-sm .btn {
   padding: 6px 15px;
+}
+@media (max-width: 575px) {
+  #cta-sm .btn {
+    display: none;
+  }
 }
 
 @media (max-width: 1169px) {
@@ -8992,6 +8997,11 @@ img {
   padding-left: 75px;
   padding-bottom: 90px;
 }
+@media (max-width: 1170px) {
+  .home .additional-content .help-section {
+    padding-left: 30px;
+  }
+}
 .home .additional-content .help-section .col-md-4 div {
   background: #ecf0f1;
   padding: 80px 0px 74px 0px;
@@ -9045,7 +9055,7 @@ img {
   margin: 0;
   display: none;
   background: #4fa7e4;
-  font-size: 1.1em;
+  font-size: 15px;
   line-height: 1.333em;
 }
 .home .additional-content .help-section .tabbed-section ul li strong {
@@ -9130,6 +9140,25 @@ img {
 .patient-paths .col-md-4 a i.fa-heart {
   color: #ed1f5e;
   border-color: #ed1f5e;
+}
+
+.mobile-btns {
+  display: none;
+}
+@media (max-width: 1170px) {
+  .mobile-btns {
+    display: block;
+  }
+}
+.mobile-btns a.btn {
+  display: block;
+  width: 300px;
+  text-align: left;
+  margin: 10px auto;
+  font-size: 20px;
+}
+.mobile-btns a.btn i {
+  margin-right: 10px;
 }
 
 .category main article, .blog main article {

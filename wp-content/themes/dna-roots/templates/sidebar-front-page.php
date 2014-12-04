@@ -1,3 +1,8 @@
+<section class="mobile-btns">
+<a href="<?php echo get_permalink(22); ?>" class="btn btn-primary"><i class="fa fa-youtube-play"></i> Our Providers</a>
+<a href="<?php echo get_permalink(7); ?>" class="btn btn-primary"><i class="fa fa-user-md"></i> About DNA Pain</a>
+<a href="<?php echo get_permalink(28); ?>" class="btn btn-primary"><i class="fa fa-graduation-cap"></i> Patient Information</a>
+</section>
 <section class="widget">
 	<h3>Our Providers</h3>
 

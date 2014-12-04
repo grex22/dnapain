@@ -212,7 +212,11 @@
 			background: #fff;
 			padding-left: 75px;
 			padding-bottom: 90px;
-
+      
+      @media(max-width:1170px){
+        padding-left: 30px;
+      }
+      
 			h2 {
 
 				@extend .fuschia;
@@ -318,7 +322,7 @@
 						margin: 0;
 						display: none;
 						background: #4fa7e4;
-						font-size: 1.1em;
+						font-size: 15px;
 						line-height: 1.333em;
 
 						strong {
@@ -468,5 +472,21 @@
 			border-color: $light-red;
     }
 
+  }
+}
+
+.mobile-btns{
+  display:none;
+  @media(max-width:1170px){
+    display:block;
+  }
+  a.btn{
+    display: block;
+    width: 300px;
+    text-align: left;
+    margin: 10px auto;
+    font-size: 20px;
+    
+    i{margin-right:10px;}
   }
 }
