@@ -1,8 +1,29 @@
-<?php the_content(); ?>
-
-<?php 
+<?php the_content();
 
 $locations = get_field('locations');
+$locationsformap = $locations; ?>
+
+<?php if( $locationsformap ): ?>
+  <!--
+	<div class="acf-map">
+		<?php foreach ( $locationsformap as $post ) : setup_postdata($post);; 
+
+			$pin = get_field('map_marker');
+
+			?>
+			<div class="marker" data-lat="<?php echo $pin['lat']; ?>" data-lng="<?php echo $pin['lng']; ?>">
+				<h4><?php echo $post->post_title; ?></h4>
+				<p class="address"><?php the_field('clinic_address'); ?></p>
+				<p>Phone: <?php the_field('phone'); ?></p>
+			</div>
+	<?php endforeach; ?>
+	</div>
+  -->
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
+
+
+<?php 
 
 if( $locations  ): ?>
 
