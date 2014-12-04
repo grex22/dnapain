@@ -2324,7 +2324,6 @@ var Roots = {
   // Home page
   home: {
     init: function() {
-      $('#carousel').carousel({interval: 7000});
       $('.tabbed-section ul li').on('click touchdown', function(e) {
         e.preventDefault();
         var li_index = $(this).index();
