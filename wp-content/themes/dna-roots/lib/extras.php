@@ -23,7 +23,7 @@ add_filter('wp_title', 'roots_wp_title', 10);
 
 
 /**
- * Manage output of wp_title()
+ * Create custom base.php for the home page
  */
 function roots_wrap_base_cpts( $templates ) {
   if ( ! is_front_page() ) {
@@ -35,3 +35,13 @@ function roots_wrap_base_cpts( $templates ) {
   return $templates;
 }
 add_filter('roots/wrap_base', 'roots_wrap_base_cpts');
+
+/**
+ * Allow uploading VCF (vcard) files
+ */
+function add_custom_mime_types($mimes){
+  return array_merge($mimes,array (
+    'vcf' => 'text/vcard'
+  ));
+}
+add_filter('upload_mimes','add_custom_mime_types');

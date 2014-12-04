@@ -2339,6 +2339,31 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
+  },
+  // Providers page
+  providers: {
+    init: function() {
+      // JavaScript to be fired on the providers page
+      $(".fancybox").fancybox({
+        maxWidth  : 800,
+        maxHeight : 600,
+        fitToView : false,
+        width   : '70%',
+        height    : '70%',
+        autoSize  : false,
+        closeClick  : false,
+        openEffect  : 'none',
+        closeEffect : 'none',
+        type: 'iframe'
+      });
+
+      window.setTimeout(function() {
+        if ( location.hash.length !== 0 ) {
+            window.scrollTo(window.scrollX, window.scrollY - 73);
+        }
+      }, 1);
+
+    }
   }
 };
 
