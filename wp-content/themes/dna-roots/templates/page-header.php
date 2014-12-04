@@ -12,7 +12,7 @@
       } else if ( is_archive() ) {
         echo roots_title();
       } else if ( is_singular( 'locations' ) ) {
-        echo 'Locations';
+        echo '<a href="' . home_url( '/locations/' ) . '">← Locations</a>';
       } else if ( is_singular( 'post' ) ) {
         echo '<a href="' . home_url( '/pain-management-blog/' ) . '">← Pain Management Blog</a>';
       } else {
