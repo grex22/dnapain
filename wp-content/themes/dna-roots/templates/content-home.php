@@ -13,7 +13,7 @@
     <div class="row patient-paths">
       <div class="col-md-4"><a href=""><i class="fa fa-star"></i>New Patients</a></div>
       <div class="col-md-4"><a href=""><i class="fa fa-user"></i>Existing Patients</a></div>
-      <div class="col-md-4"><a href=""><i class="fa fa-heart"></i>Referring Physicians</a></div>
+      <div class="col-md-4"><a href=""><i class="fa fa-heart"></i>Referring Providers</a></div>
     </div>
 
 <?php
