@@ -15,9 +15,11 @@ if( $providers ): ?>
           $slug = sanitize_title( get_the_title() );
         ?>
         <li id="<?php echo $slug; ?>" class="row">
+
           <div class="col-sm-2">
             <img src="<?php echo $provider_photo['sizes']['thumbnail']; ?>" alt="" />
           </div>
+
           <div class="col-sm-6">
             <div class="title"><h2 class="short-underline fuschia"><?php the_title(); ?></h2></div>
             <?php echo $provider_bio; ?>
@@ -27,6 +29,7 @@ if( $providers ): ?>
               <?php endif; ?>
             </div>
           </div>
+
           <div class="col-sm-4">
             <?php if ( $provider_video ) : ?>
               <h4>Meet <?php the_title(); ?></h4>
@@ -35,6 +38,7 @@ if( $providers ): ?>
               </div>
             <?php endif; ?>
           </div>
+          
         </li>
     <?php endforeach; ?>
     </ul>
