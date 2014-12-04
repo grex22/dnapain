@@ -36,8 +36,7 @@
 
 								<div><strong><?php the_sub_field('location_title'); ?></strong></div>
 								<div><?php the_sub_field('clinic_address'); ?></div>
-								<div><?php the_sub_field('phone'); ?></div>
-								<div><?php the_sub_field('fax'); ?></div>
+								<div>Ph: <?php the_sub_field('phone'); ?></div>
 
 							</li>
 

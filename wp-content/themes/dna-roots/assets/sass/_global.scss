@@ -165,9 +165,7 @@ body.logged-in header{
 	PREFOOTER
 
 */
-footer.clinic-address{
-  font-size:15px;
-}
+
 .prefooter{
   background:$brand-primary;
   color:white;
@@ -200,7 +198,9 @@ footer.clinic-address{
 	FOOTER
 
 */
-
+footer .clinic-address{
+  font-size:15px;
+}
 .footer-btn{
   display: block;
   text-align: left;
@@ -476,6 +476,10 @@ footer.content-info {
 .gform_wrapper select{
   font-size:16px;
   padding:8px 2px 8px 2px;
+}
+
+.gform_wrapper select{
+  padding:8px 2px 8px 2px!important;;
 }
 
 .gfield_label{

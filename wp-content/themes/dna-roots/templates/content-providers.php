@@ -14,17 +14,21 @@ if( $providers ): ?>
           $provider_video = get_field( 'provider_video', $post->ID );
           $slug = sanitize_title( get_the_title() );
         ?>
-        <li id="<?php echo $slug; ?>">
+        <li id="<?php echo $slug; ?>" class="row">
+          <div class="col-sm-3">
           <img src="<?php echo $provider_photo['sizes']['thumbnail']; ?>" alt="" />
-          <div class="title"><h2 class="short-underline fuschia"><?php the_title(); ?></h2></div>
-          <?php echo $provider_bio; ?>
-          <div class="text-center">
-            <?php if ( $provider_cv_download ) : ?>
-              <a class="btn btn-primary provider-btn" href="<?php echo $provider_cv_download['url']; ?>">vCard <i class="fa fa-download pull-right"></i></a>
-            <?php endif; ?>
-            <?php if ( $provider_video ) : ?>
-              <a class="btn btn-primary provider-btn fancybox" href="<?php echo $provider_video; ?>">Video <i class="fa fa-video-camera pull-right"></i></a>
-            <?php endif; ?>
+          </div>
+          <div class="col-sm-9">
+            <div class="title"><h2 class="short-underline fuschia"><?php the_title(); ?></h2></div>
+            <?php echo $provider_bio; ?>
+            <div class="text-left">
+              <?php if ( $provider_cv_download ) : ?>
+                <a class="btn btn-primary provider-btn" href="<?php echo $provider_cv_download['url']; ?>">Download CV <i class="fa fa-download pull-right"></i></a>
+              <?php endif; ?>
+              <?php if ( $provider_video ) : ?>
+                <a class="btn btn-primary provider-btn fancybox" href="<?php echo $provider_video; ?>">Video <i class="fa fa-video-camera pull-right"></i></a>
+              <?php endif; ?>
+            </div>
           </div>
         </li>
     <?php endforeach; ?>
