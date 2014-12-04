@@ -2,7 +2,8 @@
 	<h3>Our Providers</h3>
 
 	<?php
-	$providers = get_field( 'providers', 15 );
+	$providers_page = get_page_by_title( 'Providers' );
+	$providers = get_field( 'providers', $providers_page->ID );
 
 	if( $providers ): ?>
 	    <ul id="providers" class="clearfix">
