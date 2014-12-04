@@ -39,7 +39,7 @@
       <div class="container">
       <div class="carousel-caption">
         <h3><?php echo $title; ?></h3>
-        <button type="button" class="btn btn-primary" href="<?php echo $href; ?>"><?php echo $button; ?></button>
+        <a class="btn btn-primary" href="<?php echo $href; ?>"><?php echo $button; ?></a>
       </div>
       </div>
     </div>

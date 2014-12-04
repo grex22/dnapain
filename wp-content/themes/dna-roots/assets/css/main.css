@@ -8874,14 +8874,14 @@ img {
   font-size: 3.5em;
   line-height: 1.333em;
 }
-.carousel-fade .carousel-inner .item .carousel-caption button {
+.carousel-fade .carousel-inner .item .carousel-caption a.btn.btn-primary {
   font-size: 1.5em;
   padding: 15px 40px;
   font-weight: 300;
   margin-top: 30px;
   background: rgba(52, 152, 219, 0.8);
 }
-.carousel-fade .carousel-inner .item .carousel-caption button:hover {
+.carousel-fade .carousel-inner .item .carousel-caption a.btn.btn-primary:hover {
   background: #3498db;
 }
 .carousel-fade .carousel-inner .active {
@@ -9165,7 +9165,7 @@ img {
 }
 #providers .provider-btn {
   display: inline-block;
-  width: 100px;
+  width: auto;
   text-align: left;
   font-size: 16px;
 }
