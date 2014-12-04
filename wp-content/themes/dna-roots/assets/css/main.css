@@ -9120,7 +9120,7 @@ img {
   border-top: 1px solid #c0c0c0;
   padding-top: 20px;
 }
-.category main article .attachment-post-thumbnail, .blog main article .attachment-post-thumbnail {
+.category main article .attachment-thumbnail, .blog main article .attachment-thumbnail {
   float: left;
   width: 150px;
   height: auto;
