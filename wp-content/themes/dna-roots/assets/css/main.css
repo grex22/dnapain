@@ -6201,6 +6201,10 @@ body.logged-in header {
 	PREFOOTER
 
 */
+footer.clinic-address {
+  font-size: 15px;
+}
+
 .prefooter {
   background: #3498db;
   color: white;
@@ -8810,10 +8814,6 @@ img {
   border-top: 1px solid #f0f0f0;
 }
 
-.home .wrap.container section.row aside .widget h3 {
-  padding-top: 0;
-}
-
 /*
 
 	FRONT PAGE SLIDER
@@ -9044,6 +9044,42 @@ img {
   line-height: 1.666em;
 }
 
+.patient-paths .col-md-4 a {
+  display: block;
+  padding: 95px 5px 30px 5px;
+  text-align: center;
+  background: #f6f6f6;
+  font-size: 24px;
+  height: 180px;
+  border-radius: 4px;
+}
+.patient-paths .col-md-4 a:hover {
+  text-decoration: none;
+  background: #eee;
+}
+.patient-paths .col-md-4 a i {
+  color: #3498db;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 52px;
+  height: 52px;
+  margin-left: -26px;
+  text-align: center;
+  border: 2px solid #3498db;
+  border-radius: 26px;
+  font-size: 20px;
+  line-height: 52px;
+}
+.patient-paths .col-md-4 a i.fa-user {
+  color: #d305bd;
+  border-color: #d305bd;
+}
+.patient-paths .col-md-4 a i.fa-heart {
+  color: #ed1f5e;
+  border-color: #ed1f5e;
+}
+
 .category main article, .blog main article {
   padding-bottom: 20px;
 }
@@ -9079,64 +9115,6 @@ img {
 }
 .single-post .social-shares .add2any_share span {
   display: none;
-}
-
-#providers {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-#providers .title {
-  display: inline-block;
-}
-#providers .title h2 {
-  margin: 0 0 20px;
-}
-#providers img {
-  border-radius: 50%;
-  float: left;
-  margin: 0 25px 15px 0;
-}
-#providers li {
-  margin-bottom: 30px;
-}
-#providers li + li {
-  border-top: 1px solid #c0c0c0;
-  padding-top: 20px;
-}
-#providers .provider-btn {
-  display: inline-block;
-  width: 100px;
-  text-align: left;
-  font-size: 16px;
-}
-#providers .provider-btn + .provider-btn {
-  margin-left: 15px;
-}
-#providers .provider-btn i {
-  margin-top: 3px;
-}
-
-.home #providers img {
-  display: block;
-  float: none;
-  max-width: 100px;
-  height: auto;
-  margin: 0 auto;
-}
-.home #providers .small img {
-  max-width: 80px;
-}
-.home #providers li {
-  min-height: 145px;
-  margin-bottom: 10px;
-}
-.home #providers li + li {
-  border: none;
-  padding-top: 0;
-}
-.home #providers a {
-  font-size: 14px;
 }
 
 @media (max-width: 1439px) {
@@ -9280,7 +9258,7 @@ img {
   .home aside {
     padding: 50px 0;
   }
-  .home aside h2, .home aside h3, .home aside div, .home aside li {
+  .home aside h2, .home aside h3, .home aside div {
     display: none;
   }
   .home aside a.btn.hide-md {

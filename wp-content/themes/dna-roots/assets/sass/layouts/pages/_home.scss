@@ -424,3 +424,45 @@
 	}
 
 }
+
+.patient-paths .col-md-4 a{
+  display: block;
+  padding: 95px 5px 30px 5px;
+  text-align: center;
+  background: #f6f6f6;
+  font-size: 24px;
+  height: 180px;
+  border-radius:4px;
+  
+  &:hover{
+    text-decoration:none;
+    background:#eee;
+  }
+  
+  i {
+  
+    color: $brand-primary;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 52px;
+    height: 52px;
+    margin-left: -26px;
+    text-align: center;
+    border: 2px solid $brand-primary;
+    border-radius: 26px;
+    font-size: 20px;
+    line-height: 52px;
+    
+    &.fa-user{
+      color:$fuschia;
+      border-color:$fuschia;
+    }
+    
+    &.fa-heart{
+      color: $light-red;
+			border-color: $light-red;
+    }
+
+  }
+}

@@ -32,13 +32,12 @@
 
 					<?php while(has_sub_field('locations', 'option')) { ?>
 
-							<li class="col-xs-6">
+							<li class="col-xs-6 clinic-address">
 
-								<?php the_sub_field('location_title'); ?>
-
-								<span><?php the_sub_field('address'); ?></span>
-
-								<?php the_sub_field('phone'); ?>
+								<div><strong><?php the_sub_field('location_title'); ?></strong></div>
+								<div><?php the_sub_field('clinic_address'); ?></div>
+								<div><?php the_sub_field('phone'); ?></div>
+								<div><?php the_sub_field('fax'); ?></div>
 
 							</li>
 
@@ -54,7 +53,7 @@
 
 				<h6>Additional Information</h6>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus venenatis, suscipit urna a, consectetur lorem.</p>
+				<p></p>
 
 				<a class="btn btn-primary footer-btn" href="https://dnapain.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess">Patient Portal <i class="fa fa-arrow-right pull-right"></i></a>
 
@@ -62,7 +61,7 @@
 
 				<div>
 
-					<a href="#" target="_blank">
+					<!--<a href="#" target="_blank">
 						<span class="fa-stack fa-lg">
 						  <i class="fa fa-circle fa-stack-2x"></i>
 						  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -74,7 +73,7 @@
 						  <i class="fa fa-circle fa-stack-2x"></i>
 						  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 						</span>
-					</a>
+					</a>-->
 
 					<a href="https://www.youtube.com/channel/UCqLUN7PNQEcClqJKYHI8iSA" target="_blank">
 						<span class="fa-stack fa-lg">
