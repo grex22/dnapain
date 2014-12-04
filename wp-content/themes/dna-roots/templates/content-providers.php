@@ -20,7 +20,7 @@ if( $providers ): ?>
           <?php echo $provider_bio; ?>
           <div class="text-center">
             <?php if ( $provider_cv_download ) : ?>
-              <a class="btn btn-primary provider-btn fancybox" href="<?php echo $provider_cv_download['url']; ?>">vCard <i class="fa fa-download pull-right"></i></a>
+              <a class="btn btn-primary provider-btn" href="<?php echo $provider_cv_download['url']; ?>">vCard <i class="fa fa-download pull-right"></i></a>
             <?php endif; ?>
             <?php if ( $provider_video ) : ?>
               <a class="btn btn-primary provider-btn fancybox" href="<?php echo $provider_video; ?>">Video <i class="fa fa-video-camera pull-right"></i></a>
