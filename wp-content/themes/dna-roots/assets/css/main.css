@@ -9171,9 +9171,7 @@ img {
   width: auto;
   text-align: left;
   font-size: 16px;
-}
-#providers .provider-btn + .provider-btn {
-  margin-left: 15px;
+  margin-bottom: 10px;
 }
 #providers .provider-btn i {
   margin-top: 3px;
