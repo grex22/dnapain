@@ -6147,7 +6147,7 @@ body.logged-in header {
 */
 .gray-page-header {
   background: #f0f0f0;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .wrap.container.page_padding {
@@ -9190,7 +9190,7 @@ img {
   max-width: 80px;
 }
 .home #providers li {
-  min-height: 145px;
+  min-height: 165px;
   margin-bottom: 10px;
 }
 .home #providers li + li {
