@@ -155,7 +155,7 @@
 
 			  <div class="media-body">
 
-			    <h4 class="media-heading"><?php the_title(); ?></h4>
+			    <h4 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
 			    <!--<p class="entry-meta">Posted by DNA Pain in “General”</p>-->
 
