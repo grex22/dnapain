@@ -2324,14 +2324,14 @@ var Roots = {
   // Home page
   home: {
     init: function() {
-      $('#carousel').carousel({interval: 7000});
-      $('.tabbed-section ul li').on('click touchdown', function(e) {
-        e.preventDefault();
-        var li_index = $(this).index();
-        $('.tabbed-section ul li').removeClass();
-        $(this).addClass('active');
-        $(this).closest('.row').find('.col-xs-8 ul li:eq('+li_index+')').addClass('active');
-      });
+    //   $('#carousel').carousel({interval: 7000});
+    //   $('.tabbed-section ul li').on('click touchdown', function(e) {
+    //     e.preventDefault();
+    //     var li_index = $(this).index();
+    //     $('.tabbed-section ul li').removeClass();
+    //     $(this).addClass('active');
+    //     $(this).closest('.row').find('.col-xs-8 ul li:eq('+li_index+')').addClass('active');
+    //   });
     }
   },
   // About us page, note the change from about-us to about_us.
