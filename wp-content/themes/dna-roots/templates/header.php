@@ -22,7 +22,7 @@
         endif;
       ?>
     <div id="cta-big" class="cta-block pull-right">
-      <button type="button" class="btn btn-primary"  href="#">Schedule</button>
+      <button type="button" class="btn btn-primary"  href="<?php echo get_permalink(40); ?>">Schedule</button>
       <div class="clearfix"></div>
       <a href="tel:1-866-580-7246" class="tel"><i class="fa fa-phone"></i> 1 866 580-PAIN</a>
     </div>
