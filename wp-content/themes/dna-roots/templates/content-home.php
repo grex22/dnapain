@@ -122,6 +122,24 @@
 			</div>
 
 		</div>
+    
+    <h2>Learn About Your Pain</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>When it comes to your pain, knowledge is power.</h4>
+        <p>When you know the cause of your pain, you know how to fight it. Learn more about your pain, and schedule an appointment today</p>
+      </div>
+      <div class="col-sm-6">
+        <ul>
+          <li><a href="<?php echo get_permalink(165); ?>">Back Pain</a></li>
+          <li><a href="<?php echo get_permalink(166); ?>">HIP / SI Joint Pain</a></li>
+          <li><a href="<?php echo get_permalink(168); ?>">Knee Pain</a></li>
+          <li><a href="<?php echo get_permalink(164); ?>">Neck Pain</a></li>
+          <li><a href="<?php echo get_permalink(167); ?>">Shoulder Pain</a></li>
+          <li><a href="<?php echo get_permalink(204); ?>">Sciatica Pain</a></li>
+        </ul>
+      </div>
+    </div>
 
 		<?php
 		$args =	array(
