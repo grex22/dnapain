@@ -25,24 +25,31 @@
 			<div class="col-md-4 locations">
 
 				<ul class="row">
+				<?php 
+          $args=array(
+            'post_type' => 'locations',
+            'posts_per_page' => -1);
+          $locationsq = new WP_Query($args);
 
-				<?php if(get_field('locations', 'option')) { ?>
+          if( $locationsq->have_posts() ) { ?>
+            <h6>Our Locations</h6><?php
+            while ($locationsq->have_posts()) : $locationsq->the_post();
+            $phone = get_field('phone');
+            $fax = get_field('fax');
+            ?>
+              <li class="col-xs-6 clinic-address">
 
-					<h6>Our Locations</h6>
-
-					<?php while(has_sub_field('locations', 'option')) { ?>
-
-							<li class="col-xs-6 clinic-address">
-
-								<div><strong><?php the_sub_field('location_title'); ?></strong></div>
-								<div><?php the_sub_field('clinic_address'); ?></div>
-								<div>Ph: <?php the_sub_field('phone'); ?></div>
+								<div><strong><?php echo $post->post_title; ?></strong></div>
+								<div><?php the_field('clinic_address'); ?></div>
+								<?php if($phone){?><div>Ph: <?php echo $phone; ?></div><?php } ?>
 
 							</li>
-
-					<?php } ?>
-
-				<?php } ?>
+              <?php
+            endwhile;
+          }
+          wp_reset_query();
+          ?>
+    
 
 				</ul>
 

@@ -1,7 +1,5 @@
 <?php the_content(); ?>
 
-TEST CONTENT, GREG YOU CAN REMOVE ME
-
 <?php 
 
 $locations = get_field('locations');

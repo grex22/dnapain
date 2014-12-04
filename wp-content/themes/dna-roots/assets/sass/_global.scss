@@ -119,9 +119,15 @@ body.logged-in header{
     padding-top:40px;
     padding-bottom:90px;
   }
+  main + aside{
+    padding-left:40px;
+  }
+  
 }
-.home .main-content-well main{
-  padding:0!important;
+.home .main-content-well{
+  main{
+    padding:0!important;
+  }
 }
 
 .panel-group.dna-panel{
@@ -139,6 +145,9 @@ body.logged-in header{
       display:block;
       padding: 11px;
       margin: -11px;  
+      line-height: 22px;
+      text-indent: -25px;
+      padding-left: 31px;
       
       &:before{
         font-family:"FontAwesome";
@@ -173,7 +182,7 @@ body.logged-in header{
   
   h3{
     font-weight: 300;
-    font-size: 39px;
+    font-size: 30px;
     margin: 0px 0;
   }
 }
@@ -181,8 +190,8 @@ body.logged-in header{
 .btn.inverse-cta-btn{
   color:$brand-primary;
   background: white;
-  font-size: 23px;
-  margin-top: 7%;
+  font-size: 21px;
+  margin-top: 4%;
   width: 80%;
   text-align:left;
   text-transform:uppercase;
@@ -200,6 +209,7 @@ body.logged-in header{
 */
 footer .clinic-address{
   font-size:15px;
+  p{margin-bottom:4px!important;}
 }
 .footer-btn{
   display: block;
