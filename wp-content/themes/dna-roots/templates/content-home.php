@@ -131,33 +131,6 @@
 				    <a href="<?php the_permalink(); ?>" class="btn btn-primary"><i class="fa fa-arrow-right fa-inverse"></i> Read More</a>
 				</div>
 
-			  <a class="media-left" href="<?php the_permalink(); ?>">
-
-<?php
-
-	if ( has_post_thumbnail() ) {
-
-		the_post_thumbnail('full');
-
-	}
-
-?>
-
-			  </a>
-
-			  <div class="media-body">
-
-			    <h4 class="media-heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-
-			    <!--<p class="entry-meta">Posted by DNA Pain in “General”</p>-->
-
-			    <p><?php the_excerpt(); ?></p>
-
-			    <a href="<?php the_permalink(); ?>" class="btn btn-primary"><i class="fa fa-arrow-right fa-inverse"></i> Read More</a>
-
-
-			  </div>
-
 			</div>
 
 		<?php endwhile; ?>

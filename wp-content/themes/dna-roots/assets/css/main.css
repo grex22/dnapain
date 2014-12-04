@@ -9075,6 +9075,9 @@ img {
   font-size: 1.2em;
   line-height: 1.666em;
 }
+.home .additional-content .help-section .featured-blog-post .attachment-thumbnail {
+  padding: 8px 10px 10px 0;
+}
 
 .patient-paths .col-md-4 a {
   display: block;
@@ -9126,14 +9129,14 @@ img {
   border-top: 1px solid #c0c0c0;
   padding-top: 20px;
 }
-.category main article .attachment-post-thumbnail, .blog main article .attachment-post-thumbnail {
+.category main article .attachment-thumbnail, .blog main article .attachment-thumbnail {
   float: left;
   width: 150px;
   height: auto;
   padding: 0 15px 15px 0;
 }
 
-.single-post .attachment-post-thumbnail {
+.single-post .attachment-large {
   padding: 15px 0;
 }
 .single-post .share-btn {
@@ -9177,9 +9180,7 @@ img {
   width: auto;
   text-align: left;
   font-size: 16px;
-}
-#providers .provider-btn + .provider-btn {
-  margin-left: 15px;
+  margin-bottom: 10px;
 }
 #providers .provider-btn i {
   margin-top: 3px;
