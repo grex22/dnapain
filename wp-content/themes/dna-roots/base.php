@@ -40,7 +40,7 @@
           <h3>You don’t have to live with your pain. Schedule an appointment with us today!</h3>
         </div>
         <div class="col-sm-4">
-          <a href="#" class="btn inverse-cta-btn"><i class="fa fa-arrow-right pull-right"></i> Contact Us </a>
+          <a href="<?php echo get_permalink(40); ?>" class="btn inverse-cta-btn"><i class="fa fa-arrow-right pull-right"></i> Contact Us </a>
         </div>
       </div>
     </div>

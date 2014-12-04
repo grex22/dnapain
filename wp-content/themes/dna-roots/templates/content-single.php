@@ -11,6 +11,7 @@
       }
       the_content();
       ?>
+      <hr>
       <a class="btn btn-primary share-btn" href="">Share <i class="fa fa-share pull-right"></i></a>
       <div class="social-shares">
         <!-- AddToAny BEGIN -->

@@ -6121,6 +6121,10 @@ body {
   font-size: 17px;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 a, button {
   -webkit-transition: all 300ms ease-out;
   -o-transition: all 300ms ease-out;
@@ -8735,6 +8739,10 @@ img {
   line-height: 1.7em;
   padding: 5px 20px;
 }
+.banner .dropdown-menu > .active > a, .banner .dropdown-menu > .active > a:hover, .banner .dropdown-menu > .active > a:focus {
+  background: white;
+  color: #333;
+}
 .banner.minified {
   min-height: 74px;
 }
@@ -9219,6 +9227,10 @@ img {
 .home #providers a {
   font-size: 16px;
   font-weight: 500;
+}
+
+#providers.locations-list img {
+  border-radius: 3px;
 }
 
 @media (max-width: 1439px) {
