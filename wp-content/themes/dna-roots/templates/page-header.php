@@ -5,12 +5,12 @@
   	<h2 class="entry-title blue short-underline"><?php
       if(is_front_page()){
         echo "About DNA Advanced Pain Management";
-      } else if ( is_category() ) {
+      } else if ( is_category() || is_home() ) {
         echo "Pain Management Blog";
       } else if ( is_archive() ) {
         echo roots_title();
       } else if ( is_singular( 'post' ) ) {
-        echo '<a href="' . home_url( '/category/pain-management/' ) . '">← Pain Management Blog</a>';
+        echo '<a href="' . home_url( '/pain-management-blog/' ) . '">← Pain Management Blog</a>';
       } else {
         if(get_field('alternate_title')){
           the_field('alternate_title');
