@@ -13,8 +13,9 @@ if( $providers ): ?>
 
           <div class="col-sm-2">
           </div>
-          
+
           <div class="col-sm-6">
+            Locations Page Row
           </div>
 
           <div class="col-sm-4">
