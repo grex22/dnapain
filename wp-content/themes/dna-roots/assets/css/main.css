@@ -8669,8 +8669,9 @@ img {
 }
 @media (max-width: 1200px) and (min-width: 1170px) {
   .banner .navbar-nav > li > a {
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 4px;
+    padding-right: 5px;
+    font-size: 17px;
   }
 }
 .banner .navbar-nav > li > a:before {
@@ -8799,6 +8800,14 @@ img {
 @media (max-width: 1169px) {
   #cta-big {
     display: none;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1170px) {
+  #cta-big .btn {
+    padding: 6px 24px;
+  }
+  #cta-big .tel {
+    font-size: 18px;
   }
 }
 

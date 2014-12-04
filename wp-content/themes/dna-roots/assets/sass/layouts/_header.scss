@@ -58,8 +58,9 @@
       font-size:18px;
       
       @media(max-width:1200px) and (min-width:1170px){
-        padding-left:7px;
-        padding-right:7px;
+        padding-left: 4px;
+        padding-right: 5px;
+        font-size: 17px;
       }
       
       
@@ -166,6 +167,7 @@
     padding: 6px 35px;
     font-size: 20px;
     margin:0 auto 5px;
+    
   }
   
   .tel{
@@ -176,6 +178,7 @@
       text-decoration:none;
     }
   }
+
 }
 
 .minified .cta-block{
@@ -194,6 +197,10 @@
 
 #cta-big{
   @media(max-width:1169px){display:none;}
+  @media(max-width:1200px) and (min-width:1170px){
+  .btn{padding: 6px 24px;}
+  .tel{font-size:18px;}
+  }
 }
 
 .minified #cta-sm{margin-top:0px}
