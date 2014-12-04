@@ -34,7 +34,7 @@ if( $providers ): ?>
             <?php if ( $provider_video ) : ?>
               <h4>Meet <?php the_title(); ?></h4>
               <div class="embed-responsive embed-responsive-16by9">
-                <?php echo wp_oembed_get( $provider_video, array() ); ?>
+                <iframe src="<?php echo $provider_video; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
               </div>
             <?php endif; ?>
           </div>
