@@ -2408,7 +2408,7 @@ $(window).scroll(function(){
     if ($nav.data('size') === 'small') {
       $nav.data('size','big').stop().animate({
           height:'119px',
-      }, 200);
+      }, 50);
       $nav.find('.navbar-header').fadeTo(50,0.2).delay(50).fadeTo(100,1).removeClass('minified');
       $nav.removeClass('minified');
     }
