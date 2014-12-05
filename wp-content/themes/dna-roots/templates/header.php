@@ -5,13 +5,13 @@
         <span class="sr-only">Toggle navigation</span>
         MENU
       </button>
-      <button class="navbar-toggle phone-button" type="button">
+      <a class="navbar-toggle phone-button" href="tel://1-866-580-7246">
         <i class="fa fa-phone"></i>
-      </button>
+      </a>
 			<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
       <div id="cta-sm" class="cta-block pull-right">
         <a class="btn btn-primary"  href="<?php echo get_permalink(40); ?>">Schedule</a>
-        <!--<a href="tel:1-866-580-7246" class="tel"><i class="fa fa-phone"></i> 1 866 580-PAIN</a>-->
+        <a href="tel://1-866-580-7246" class="tel"><i class="fa fa-phone"></i> 1 866 580-PAIN</a>
       </div>
     </div>
 
@@ -24,7 +24,7 @@
     <div id="cta-big" class="cta-block pull-right">
       <a class="btn btn-primary"  href="<?php echo get_permalink(40); ?>">Schedule</a>
       <div class="clearfix"></div>
-      <a href="tel:1-866-580-7246" class="tel"><i class="fa fa-phone"></i> 1 866 580-PAIN</a>
+      <a href="tel://1-866-580-7246" class="tel"><i class="fa fa-phone"></i> 1 866 580-PAIN</a>
     </div>
     </nav>
     

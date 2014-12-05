@@ -6,7 +6,12 @@
     margin-right:20px;
     background-repeat:no-repeat;
     
-    
+    @media(max-width:450px){
+      width: 180px;
+      margin:0;
+      background-size: contain;
+      /*background:url('../img/dna-minified.png');*/
+    }
   }
   
   .navbar-toggle{
@@ -201,9 +206,9 @@
   .btn{padding: 6px 15px;}
   
   @media(max-width:575px){
-    .btn{
+    
       display:none;
-    }
+    
   }
 }
 

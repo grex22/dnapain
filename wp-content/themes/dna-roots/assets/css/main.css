@@ -8633,6 +8633,15 @@ img {
   margin-right: 20px;
   background-repeat: no-repeat;
 }
+@media (max-width: 450px) {
+  .banner .navbar-brand {
+    width: 180px;
+    margin: 0;
+    -webkit-background-size: contain;
+            background-size: contain;
+    /*background:url('../img/dna-minified.png');*/
+  }
+}
 .banner .navbar-toggle {
   font-size: 18px;
   margin: 0;
@@ -8814,7 +8823,7 @@ img {
   padding: 6px 15px;
 }
 @media (max-width: 575px) {
-  #cta-sm .btn {
+  #cta-sm {
     display: none;
   }
 }
