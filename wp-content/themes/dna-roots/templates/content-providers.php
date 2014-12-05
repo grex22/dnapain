@@ -4,7 +4,7 @@
 
 $providers = get_field('providers');
 
-if( $providers ): ?>
+if( $providers ): $i = 1; ?>
     <ul id="providers">
     <?php foreach( $providers as $post) : setup_postdata($post); ?>
         <?php
@@ -13,6 +13,7 @@ if( $providers ): ?>
           $provider_cv_download = get_field( 'provider_cv_download', $post->ID );
           $provider_video = get_field( 'provider_video', $post->ID );
           $slug = sanitize_title( get_the_title() );
+          $i++;
         ?>
         <li id="<?php echo $slug; ?>" class="row">
 
@@ -34,7 +35,7 @@ if( $providers ): ?>
             <?php if ( $provider_video ) : ?>
               <h4>Meet <?php the_title(); ?></h4>
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="yt_players" src="<?php echo $provider_video; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe id="ytid<?php echo $i; ?>" class="yt_players" src="<?php echo $provider_video; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
               </div>
             <?php endif; ?>
           </div>
