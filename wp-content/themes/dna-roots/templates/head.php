@@ -7,6 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <?php wp_head(); ?>
-  <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+  <!--<script type="text/javascript" src="http://www.youtube.com/player_api"></script>-->
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
 </head>
