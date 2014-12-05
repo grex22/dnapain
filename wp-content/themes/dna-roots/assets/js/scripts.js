@@ -2417,7 +2417,7 @@ $(window).scroll(function(){
 players = new Array();
 
 function onYouTubeIframeAPIReady() {
-    var temp = $(".embed-responsive iframe");
+    var temp = $("iframe.yt_players");
     for (var i = 0; i < temp.length; i++) {
         var t = new YT.Player($(temp[i]).attr('id'), {
             events: {

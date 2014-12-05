@@ -34,7 +34,7 @@ if( $providers ): ?>
             <?php if ( $provider_video ) : ?>
               <h4>Meet <?php the_title(); ?></h4>
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="<?php echo $provider_video; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe class="yt_players" src="<?php echo $provider_video; ?>?rel=0" frameborder="0" allowfullscreen></iframe>
               </div>
             <?php endif; ?>
           </div>
