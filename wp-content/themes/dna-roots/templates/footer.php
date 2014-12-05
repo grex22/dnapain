@@ -30,22 +30,31 @@
             'post_type' => 'locations',
             'posts_per_page' => -1);
           $locationsq = new WP_Query($args);
+		  $locarray = array();
 
           if( $locationsq->have_posts() ) { ?>
             <h6>Our Locations</h6><?php
             while ($locationsq->have_posts()) : $locationsq->the_post();
             $phone = get_field('phone');
             $fax = get_field('fax');
-            ?>
-              <li class="col-xs-6 clinic-address">
+			$locarray[] =
+		  	"
+              <li class='col-xs-6 clinic-address'>
 
-								<div><strong><?php echo $post->post_title; ?></strong></div>
-								<div><?php the_field('clinic_address'); ?></div>
-								<?php if($phone){?><div>Ph: <?php echo $phone; ?></div><?php } ?>
-
-							</li>
-              <?php
+                    <div><strong>". $post->post_title ."</strong></div>
+                    <div>" .get_field('clinic_address')."</div>
+                    <div>Ph: ". $phone ."</div>
+    
+                </li>
+              ";
             endwhile;
+			$rowsloc = array_chunk($locarray, 2);
+			foreach($rowsloc as $row){
+				foreach($row as $loc):
+					echo $loc;
+				endforeach;
+				echo "<div class='clearfix'></div>";
+			}
           }
           wp_reset_query();
           ?>

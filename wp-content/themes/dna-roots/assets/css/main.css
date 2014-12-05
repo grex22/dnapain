@@ -8635,7 +8635,7 @@ img {
 }
 @media (max-width: 450px) {
   .banner .navbar-brand {
-    width: 180px;
+    width: 160px;
     margin: 0;
     -webkit-background-size: contain;
             background-size: contain;
@@ -9377,6 +9377,7 @@ img {
   }
   .home #cycle .item .cycle-caption h3 {
     font-size: 2.5em;
+    line-height: 1.2em;
     margin-top: 0;
   }
   .home #cycle .item .cycle-caption .btn.btn-primary {
