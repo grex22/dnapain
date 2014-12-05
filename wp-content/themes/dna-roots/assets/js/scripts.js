@@ -2356,7 +2356,9 @@ var Roots = {
         });
       }
       
-      
+      //Viewmedica
+      vmwidth = $("main.main").width();
+      client="2713"; width=580; vm_open();
       
     }
   },

@@ -50,8 +50,5 @@
 
   <?php wp_footer(); ?>
   
-  <script type="text/javascript" src="https://www.swarminteractive.com/js/vm.js"></script>
-  <script type="text/javascript">client="2713"; width=580; vm_open();</script>
-
 </body>
 </html>

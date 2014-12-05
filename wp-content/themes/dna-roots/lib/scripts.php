@@ -27,6 +27,7 @@ function roots_scripts() {
       'fancyjs'   => '/assets/vendor/fancybox/jquery.fancybox.pack.js',
       'fancycss'  => '/assets/vendor/fancybox/jquery.fancybox.css',
       'cycle2'    => '/assets/vendor/cycle2/cycle2.min.js',
+      'viewmedica'    => '//www.swarminteractive.com/js/vm.js',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
     );
   } else {
@@ -39,6 +40,7 @@ function roots_scripts() {
       'fancyjs'   => '/assets/vendor/fancybox/jquery.fancybox.pack.js',
       'fancycss'  => '/assets/vendor/fancybox/jquery.fancybox.css',
       'cycle2'    => '/assets/vendor/cycle2/cycle2.min.js',
+      'viewmedica'    => '//www.swarminteractive.com/js/vm.js',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
     );
   }
@@ -63,6 +65,7 @@ function roots_scripts() {
   wp_enqueue_script('modernizr', get_template_directory_uri() . $assets['modernizr'], array(), null, false);
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_js', get_template_directory_uri() . $assets['js'], array(), null, true);
+  wp_enqueue_script('viewmedica',$assets['viewmedica']);
 
   if ( is_page( 'providers' ) ) {
     wp_enqueue_style('fancybox_css', get_template_directory_uri() . $assets['fancycss'], false, null);
