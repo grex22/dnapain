@@ -2320,6 +2320,19 @@ var Roots = {
         $('.add2any_share span').trigger('click');
       });
       
+      $(".fancybox").fancybox({
+        maxWidth  : 800,
+        maxHeight : 600,
+        fitToView : false,
+        width   : '70%',
+        height    : '70%',
+        autoSize  : false,
+        closeClick  : false,
+        openEffect  : 'none',
+        closeEffect : 'none',
+        type: 'iframe'
+      });
+      
       
       
       $('header.navbar').data('size','big');
@@ -2384,18 +2397,7 @@ var Roots = {
   providers: {
     init: function() {
       // JavaScript to be fired on the providers page
-      $(".fancybox").fancybox({
-        maxWidth  : 800,
-        maxHeight : 600,
-        fitToView : false,
-        width   : '70%',
-        height    : '70%',
-        autoSize  : false,
-        closeClick  : false,
-        openEffect  : 'none',
-        closeEffect : 'none',
-        type: 'iframe'
-      });
+      
 
       window.setTimeout(function() {
         if ( location.hash.length !== 0 ) {
