@@ -272,6 +272,12 @@
 			}
 
 			.tabbed-section {
+        
+        .acf-map {
+          width: 100%;
+          height: 160px;
+          margin-bottom: 10px;
+        }
 
 				background: #3497db;
 				width: 100%;
@@ -368,6 +374,56 @@
 				}
 
 			}
+      
+      .pain-diagram{
+        position:relative;
+        display:inline-block;
+        
+        a{
+          position: absolute;
+          background: #3497db;
+          height: 26%;
+          width: 20%;
+          border-radius: 50%;
+          color: white;
+          text-align: center;
+          font-size: 14px;
+          padding: 5% 0 0;
+          font-weight: bold;
+          border: 6px solid #60b4eb;
+          box-sizing: border-box;
+          
+          &:hover{
+            text-decoration:none;
+            background: lighten(#3497db, 8);
+          }
+          
+          &.sciatica{
+            top: 73%;
+            left: 14%;
+          }
+          &.hip{
+            top: 40%;
+            left: 5%;
+          }
+          &.knee{
+            top: 74%;
+            left: 65%;
+          }
+          &.back{
+            top: 36%;
+            left: 74%;
+          }
+          &.shoulder{
+            top: 2%;
+            left: 65%;
+          }
+          &.neck{
+            top: 2%;
+            left: 15%;
+          }
+        }
+      }
 
 			.featured-blog-post {
 

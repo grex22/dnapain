@@ -70,9 +70,9 @@
 
 				<p></p>
 
-				<a class="btn btn-primary footer-btn" href="https://dnapain.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess">Patient Portal <i class="fa fa-arrow-right pull-right"></i></a>
+				<a class="btn btn-primary footer-btn" href="https://dnapain.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess" target="_blank">Patient Portal <i class="fa fa-arrow-right pull-right"></i></a>
 
-				<a class="btn btn-primary footer-btn" href="http://employee.dnapain.com/">Employee Portal <i class="fa fa-arrow-right pull-right"></i></a>
+				<a class="btn btn-primary footer-btn" href="http://employee.dnapain.com/" target="_blank">Employee Portal <i class="fa fa-arrow-right pull-right"></i></a>
 
 				<div>
 

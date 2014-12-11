@@ -4,8 +4,8 @@ $locations = get_field('locations');
 $locationsformap = $locations; ?>
 
 <?php if( $locationsformap ): ?>
-  <!--
-	<div class="acf-map">
+  	<h3><?php echo sizeof($locationsformap); ?> Convenient Locations in the Pittsburgh Area:</h3>
+	<div class="acf-map bigacfmap">
 		<?php foreach ( $locationsformap as $post ) : setup_postdata($post);; 
 
 			$pin = get_field('map_marker');
@@ -18,7 +18,7 @@ $locationsformap = $locations; ?>
 			</div>
 	<?php endforeach; ?>
 	</div>
-  -->
+  	<hr>
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
 

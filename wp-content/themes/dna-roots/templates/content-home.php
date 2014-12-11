@@ -78,6 +78,15 @@
 					  <div class="row">
 
 					    <div class="col-xs-12">
+                        <?php
+                        $location = get_field('map_marker');
+                            
+						if( !empty($location) ):
+						?>
+						<div class="acf-map">
+							<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+						</div>
+						<?php endif; ?>
 
 					      <?php
                   if(get_field('google_map_link')) echo "<a href='".get_field('google_map_link')."' target='_blank'>View on Google Maps";
@@ -123,21 +132,25 @@
 
 		</div>
     
+    
     <h2>Learn About Your Pain</h2>
+ 
+    
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-3">
         <h4>When it comes to your pain, knowledge is power.</h4>
         <p>When you know the cause of your pain, you know how to fight it. Learn more about your pain, and schedule an appointment today</p>
       </div>
-      <div class="col-sm-6">
-        <ul>
-          <li><a href="<?php echo get_permalink(165); ?>">Back Pain</a></li>
-          <li><a href="<?php echo get_permalink(166); ?>">HIP / SI Joint Pain</a></li>
-          <li><a href="<?php echo get_permalink(168); ?>">Knee Pain</a></li>
-          <li><a href="<?php echo get_permalink(164); ?>">Neck Pain</a></li>
-          <li><a href="<?php echo get_permalink(167); ?>">Shoulder Pain</a></li>
-          <li><a href="<?php echo get_permalink(204); ?>">Sciatica Pain</a></li>
-        </ul>
+      <div class="col-sm-9">
+      	<div class="pain-diagram">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pain-diagram-bg.png">
+        <a href="<?php echo get_permalink(166); ?>" class="hip">Hip / SI<br>Joint Pain</a>
+        <a href="<?php echo get_permalink(168); ?>" class="knee">Knee<br>Pain</a>
+        <a href="<?php echo get_permalink(204); ?>" class="sciatica">Sciatica<br>Pain</a>
+        <a href="<?php echo get_permalink(165); ?>" class="back">Back<br>Pain</a>
+        <a href="<?php echo get_permalink(167); ?>" class="shoulder">Shoulder<br>Pain</a>
+        <a href="<?php echo get_permalink(164); ?>" class="neck">Neck<br>Pain</a>
+      	</div>
       </div>
     </div>
 

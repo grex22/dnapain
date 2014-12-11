@@ -6435,6 +6435,11 @@ footer.content-info .container .row .col-md-3.locations li, footer.content-info 
   margin-top: 17px;
 }
 
+.acf-map.bigacfmap {
+  width: 100%;
+  height: 400px;
+}
+
 @media (min-width: 1200px) {
   .container {
     /*width: 100%;*/
@@ -9050,6 +9055,11 @@ img {
   background: #3497db;
   width: 100%;
 }
+.home .additional-content .help-section .tabbed-section .acf-map {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 10px;
+}
 .home .additional-content .help-section .tabbed-section .col-xs-4 {
   padding: 0;
 }
@@ -9099,6 +9109,53 @@ img {
 }
 .home .additional-content .help-section .tabbed-section .col-xs-8 ul li.active {
   display: block;
+}
+.home .additional-content .help-section .pain-diagram {
+  position: relative;
+  display: inline-block;
+}
+.home .additional-content .help-section .pain-diagram a {
+  position: absolute;
+  background: #3497db;
+  height: 26%;
+  width: 20%;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 5% 0 0;
+  font-weight: bold;
+  border: 6px solid #60b4eb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.home .additional-content .help-section .pain-diagram a:hover {
+  text-decoration: none;
+  background: #57a9e1;
+}
+.home .additional-content .help-section .pain-diagram a.sciatica {
+  top: 73%;
+  left: 14%;
+}
+.home .additional-content .help-section .pain-diagram a.hip {
+  top: 40%;
+  left: 5%;
+}
+.home .additional-content .help-section .pain-diagram a.knee {
+  top: 74%;
+  left: 65%;
+}
+.home .additional-content .help-section .pain-diagram a.back {
+  top: 36%;
+  left: 74%;
+}
+.home .additional-content .help-section .pain-diagram a.shoulder {
+  top: 2%;
+  left: 65%;
+}
+.home .additional-content .help-section .pain-diagram a.neck {
+  top: 2%;
+  left: 15%;
 }
 .home .additional-content .help-section .featured-blog-post h4 {
   color: #595959;

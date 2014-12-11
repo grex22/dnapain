@@ -49,10 +49,12 @@ if ( is_front_page() ) {
 		$menu_title = 'Menu';
 	endif;
 	?>
+  <?php if(wp_nav_menu( array( 'theme_location' => 'primary_navigation', 'start_depth' => 1, 'echo' => false, 'container' => false ) )): ?>
 	<section class="widget nav_plus_widget-2 widget_nav_plus_widget">
 		<h3><?php echo $menu_title; ?></h3>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary_navigation', 'start_depth' => 1 ) ); ?>
 	</section>
+  <?php endif; ?>
 	<?php
 
 	dynamic_sidebar( 'sidebar-primary' );
