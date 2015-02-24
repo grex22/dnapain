@@ -45,6 +45,7 @@
       		font-weight: bold;
       		font-size: 3.5em;
       		line-height: 1.333em;
+          p{margin-bottom:5px;}
       	}
 
       	a.btn.btn-primary {
@@ -52,7 +53,7 @@
       		font-size: 1.5em;
       		padding: 15px 40px;
       		font-weight: 300;
-      		margin-top: 30px;
+      		margin-top: 15px;
       		background: rgba(52,152,219,0.8); //$brand-primary
 
       		&:hover {

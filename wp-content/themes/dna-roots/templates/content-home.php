@@ -37,42 +37,30 @@
 		<div class="tabbed-section row">
 			<div class="col-xs-4">
 				<ul>
-        <?php 
-          $args=array(
-            'post_type' => 'locations',
-            'posts_per_page' => -1);
-          $locationsq = new WP_Query($args);
-
-          if( $locationsq->have_posts() ) {
-            $i=1;
-            while ($locationsq->have_posts()) : $locationsq->the_post();
-            ?> 
-              <li class="<?php if($i==1) echo "active"; ?>"><i class="fa fa-map-marker"></i> <?php echo $post->post_title; ?></li>
-
-            <?php
-            $i++;
-            endwhile;
-          }
-          wp_reset_query();
-          ?>
-
-
-				</ul>
-
-
+					<?php
+            
+                      $locarray = array();
+                      $locationsorder = get_field('locations_order','option');
+            
+                      $i=1;
+                      foreach($locationsorder as $post):
+                        setup_postdata($post);
+                        ?>
+                        <li class="<?php if($i==1) echo "active"; ?>"><i class="fa fa-map-marker"></i> <?php echo $post->post_title; ?></li>
+                        <?php
+            		  $i++;
+                      endforeach; ?>
+          		</ul>
 			</div>
-
-			<div class="col-xs-8">
-				<ul>           
+            <div class="col-xs-8">
+			
+			<ul>           
 				<?php
-          $args=array(
-            'post_type' => 'locations',
-            'posts_per_page' => -1);
-          $locationsq = new WP_Query($args);
-          if( $locationsq->have_posts() ) : ?>
+				$i = 1;
+		  foreach($locationsorder as $post):
+		  	
+		  	setup_postdata($post); ?>
 
-					<?php $i=1; ?>
-					<?php while($locationsq->have_posts()) : $locationsq->the_post(); ?>
 					<li class="<?php if($i==1) echo "active"; ?>">
 
 					  <div class="row">
@@ -91,7 +79,7 @@
 					      <?php
                   if(get_field('google_map_link')) echo "<a href='".get_field('google_map_link')."' target='_blank'>View on Google Maps";
                 ?>
-                <!--<img src="<?php print_r(get_field('map_image')); ?>" style="max-width:100%;width:auto;">-->
+                
                 <?php
                   if(get_field('google_map_link')) echo "</a><br>";
                 ?>
@@ -124,10 +112,9 @@
 					</li>
 
 					<?php $i++; ?>
-					<?php endwhile; ?>
-				<?php endif; ?>
+					<?php endforeach; ?>
+                    <?php wp_reset_query(); ?>
             	</ul>
-
 			</div>
 
 		</div>

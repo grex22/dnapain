@@ -26,16 +26,14 @@
 
 				<ul class="row">
 				<?php 
-          $args=array(
-            'post_type' => 'locations',
-            'posts_per_page' => -1);
-          $locationsq = new WP_Query($args);
-		  $locarray = array();
 
-          if( $locationsq->have_posts() ) { ?>
-            <h6>Our Locations</h6><?php
-            while ($locationsq->have_posts()) : $locationsq->the_post();
-            $phone = get_field('phone');
+		  $locarray = array();
+		  $locationsorder = get_field('locations_order','option');
+		  
+		  echo "<h6>Our Locations</h6>";
+		  foreach($locationsorder as $post):
+		  	setup_postdata($post);
+			$phone = get_field('phone');
             $fax = get_field('fax');
 			$locarray[] =
 		  	"
@@ -47,15 +45,17 @@
     
                 </li>
               ";
-            endwhile;
-			$rowsloc = array_chunk($locarray, 2);
-			foreach($rowsloc as $row){
-				foreach($row as $loc):
-					echo $loc;
-				endforeach;
-				echo "<div class='clearfix'></div>";
-			}
-          }
+
+		  endforeach;
+		  $rowsloc = array_chunk($locarray, 2);
+		  foreach($rowsloc as $row){
+			  foreach($row as $loc):
+				  echo $loc;
+			  endforeach;
+			  echo "<div class='clearfix'></div>";
+		  }
+
+          
           wp_reset_query();
           ?>
     
@@ -73,6 +73,16 @@
 				<a class="btn btn-primary footer-btn" href="https://dnapain.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess" target="_blank">Patient Portal <i class="fa fa-arrow-right pull-right"></i></a>
 
 				<a class="btn btn-primary footer-btn" href="http://employee.dnapain.com/" target="_blank">Employee Portal <i class="fa fa-arrow-right pull-right"></i></a>
+                
+                <form target="_blank" style="margin:0;display:block" action="https://securepayments.cardconnect.com/hpp/payment/" method="post">
+                  
+                  <!-- 496160873888   -->
+                  <input type="hidden" name="ccId" value="cvOKhVtJeFUH347D7XXL/tWymEyFjvsFYmhYgbnNBeBUgzLYGnv6Y6TP2jKRULLmUXeG+HrMAdP1L2Gfs8pT4L9snUzhuuePJTassZvgqTAJPhAWWYkiyMXo6mraHwDWjVucKxuhqDn9yuuuVboJ8RvkjL3nIHqqoWBLssWY2XE=" />       
+                  <input type="hidden" name="ccSite" value="fts">
+                  <input type="hidden" name="ccPostbackUrl" value="http://dnapain.com/thank-you/">
+                  <button type="submit" name="submit" class="btn btn-primary footer-btn" style="width: 80%;margin-right: 20%;">Make a Payment <i class="fa fa-credit-card pull-right"></i></button>
+                  
+                </form>
 
 				<div>
 

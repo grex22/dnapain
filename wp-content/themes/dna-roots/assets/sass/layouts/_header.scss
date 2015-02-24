@@ -168,7 +168,7 @@
 
 
 .cta-block{
-  padding-top: 27px;
+  padding-top: 12px;
   text-align: center;
   
   .btn{
@@ -193,9 +193,9 @@
 }
 
 .minified .cta-block{
+  padding-top:0px;
   .tel{display:none;}
-  a.btn{margin-top:-9px;
-  font-size:20px;}
+  a.btn{font-size:20px;margin-top:-4px}
 }
 
 #cta-sm{

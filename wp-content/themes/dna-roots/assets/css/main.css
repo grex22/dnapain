@@ -6149,6 +6149,13 @@ body.logged-in header {
   CONTENT
   
 */
+@media (max-width: 767px) {
+  .alignright, .alignleft {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
 .gray-page-header {
   background: #f0f0f0;
   padding-bottom: 40px;
@@ -6204,6 +6211,18 @@ body.logged-in header {
 }
 .panel-group.dna-panel .panel-heading:hover {
   background: #eee;
+}
+
+ul#viewmedica_list {
+  max-height: 470px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+}
+ul#viewmedica_list > li {
+  margin: 15px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 /*
@@ -6422,7 +6441,8 @@ footer.content-info .container .row .col-md-3.locations li, footer.content-info 
 .gform_wrapper input[type=tel],
 .gform_wrapper input[type=number],
 .gform_wrapper input[type=password],
-.gform_wrapper select {
+.gform_wrapper select,
+.gform_wrapper textarea {
   font-size: 16px;
   padding: 8px 2px 8px 2px;
 }
@@ -8786,7 +8806,7 @@ img {
 }
 
 .cta-block {
-  padding-top: 27px;
+  padding-top: 12px;
   text-align: center;
 }
 .cta-block .btn {
@@ -8806,12 +8826,15 @@ img {
   text-decoration: none;
 }
 
+.minified .cta-block {
+  padding-top: 0px;
+}
 .minified .cta-block .tel {
   display: none;
 }
 .minified .cta-block a.btn {
-  margin-top: -9px;
   font-size: 20px;
+  margin-top: -4px;
 }
 
 #cta-sm {
@@ -8933,11 +8956,14 @@ img {
   font-size: 3.5em;
   line-height: 1.333em;
 }
+.cycle-slideshow .item .cycle-caption h3 p {
+  margin-bottom: 5px;
+}
 .cycle-slideshow .item .cycle-caption a.btn.btn-primary {
   font-size: 1.5em;
   padding: 15px 40px;
   font-weight: 300;
-  margin-top: 30px;
+  margin-top: 15px;
   background: rgba(52, 152, 219, 0.8);
 }
 .cycle-slideshow .item .cycle-caption a.btn.btn-primary:hover {

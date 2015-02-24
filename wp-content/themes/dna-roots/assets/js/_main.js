@@ -77,16 +77,14 @@ var Roots = {
         });
       }
       
-      //Viewmedica
-      vmwidth = $("main.main").width();
-      client="2713"; width=580; vm_open();
+      
       
     }
   },
   // Home page
   home: {
     init: function() {
-      $('.tabbed-section ul li').on('click touchdown', function(e) {
+      $('.tabbed-section .col-xs-4 ul li').on('click touchdown', function(e) {
         e.preventDefault();
         var li_index = $(this).index();
         $('.tabbed-section ul li').removeClass();
@@ -123,6 +121,18 @@ var Roots = {
     init: function(){
       render_map( $(".acf-map") );
     }
+  },
+  patient_education_library: {
+	  init:function(){
+		  //Viewmedica
+      	  client="2713"; width=750; vm_open();
+	  }
+  },
+  tester: {
+	  init:function(){
+		  //Viewmedica
+      	  client="2713"; width=750; vm_open();
+	  }
   }
 };
 

@@ -106,6 +106,13 @@ body.logged-in header{
   CONTENT
   
 */
+.alignright,.alignleft{
+  @media (max-width: 767px){
+    display:block;
+    margin-top:10px;
+  }
+}
+
 .gray-page-header{
   background:#f0f0f0;
   padding-bottom:40px;
@@ -168,6 +175,18 @@ body.logged-in header{
     }
   }
   .panel-heading:hover{background:#eee;}
+}
+
+ul#viewmedica_list{
+  max-height: 470px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  
+  & > li{
+    margin:15px 0; border-bottom:1px solid #ddd;
+  }
 }
 
 
@@ -485,7 +504,8 @@ footer.content-info {
 .gform_wrapper input[type=tel],
 .gform_wrapper input[type=number],
 .gform_wrapper input[type=password],
-.gform_wrapper select{
+.gform_wrapper select,
+.gform_wrapper textarea{
   font-size:16px;
   padding:8px 2px 8px 2px;
 }
