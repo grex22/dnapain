@@ -215,7 +215,7 @@ class acf_field_repeater extends acf_field {
 		<thead>
 			<tr>
 				<?php if( $show_order ): ?>
-					<th class="order"></th>
+					<th class="order"><span class="order-spacer"></span></th>
 				<?php endif; ?>
 				
 				<?php foreach( $field['sub_fields'] as $sub_field ): 
@@ -245,7 +245,7 @@ class acf_field_repeater extends acf_field {
 				<?php endforeach; ?>
 
 				<?php if( $show_remove ): ?>
-					<th class="remove"></th>
+					<th class="remove"><span class="remove-spacer"></span></th>
 				<?php endif; ?>
 			</tr>
 		</thead>
@@ -679,6 +679,11 @@ class acf_field_repeater extends acf_field {
 						} elseif( isset($row[ $sub_field['name'] ]) ) {
 							
 							$v = $row[ $sub_field['name'] ];
+							
+						} else {
+							
+							// input is not set (hidden by conditioanl logic)
+							continue;
 							
 						}
 						
