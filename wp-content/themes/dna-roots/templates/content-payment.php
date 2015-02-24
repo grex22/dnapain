@@ -30,7 +30,7 @@ endif;
     </div>
   
   </div>
-  <button type="submit" name="submit" style="background: #258cd1;color: white;border: 0;font-size: 16px;padding: 7px 15px;margin: 5px 0 5px 0;border-radius:3px;"><i class="fa fa-credit-card"></i> Make a Payment</button>
+  <button type="submit" name="submit" class="btn btn-primary btn-lg"><i class="fa fa-credit-card"></i> Make a Payment</button>
           
 </form>
 
