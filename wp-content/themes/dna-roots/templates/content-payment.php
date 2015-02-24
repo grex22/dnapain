@@ -18,15 +18,19 @@ endif;
   <input type="hidden" name="ccId" value="<?php echo $ccid; ?>" />  
   <input type="hidden" name="ccSite" value="fts">
   <input type="hidden" name="ccPostbackUrl" value="http://dnapain.com/thank-you/">
-  <label>Full Name (as it appears on your credit card)<br>
-  <input type="text" name="ccName">
-  </label>
-  <br>
-  <label>Payment Amount<br>
-  <input type="text" name="ccAmount">
-  </label>
-  <br>
-  <button type="submit" name="submit" style="background: #258cd1;color: white;border: 0;font-size: 16px;padding: 5px 10px;margin: 5px 0 5px 0;border-radius:3px;"><i class="fa fa-credit-card"></i> Make a Payment</button>
+  <div class="form-group">
+    <label>Full Name (as it appears on your credit card)</label>
+    <input type="text" class="form-control input-lg" name="ccName">
+  </div>
+  <div class="form-group">
+  	<label>Payment Amount</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control input-lg" name="ccAmount">
+    </div>
+  
+  </div>
+  <button type="submit" name="submit" style="background: #258cd1;color: white;border: 0;font-size: 16px;padding: 7px 15px;margin: 5px 0 5px 0;border-radius:3px;"><i class="fa fa-credit-card"></i> Make a Payment</button>
           
 </form>
 
