@@ -11,7 +11,7 @@
 			<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
       <div id="cta-sm" class="cta-block pull-right">
        	<form style="margin:0;display:inline-block" action="https://securepayments.cardconnect.com/hpp/payment/" method="post" target="_blank">
-        	<!-- test is securepayementstest.cardconnect.com.... -->
+        	<!-- test is securepaymentstest.cardconnect.com.... -->
           
           <!-- 496160873888   -->
           <input type="hidden" name="ccId" value="cvOKhVtJeFUH347D7XXL/tWymEyFjvsFYmhYgbnNBeBUgzLYGnv6Y6TP2jKRULLmUXeG+HrMAdP1L2Gfs8pT4L9snUzhuuePJTassZvgqTAJPhAWWYkiyMXo6mraHwDWjVucKxuhqDn9yuuuVboJ8RvkjL3nIHqqoWBLssWY2XE=" />
