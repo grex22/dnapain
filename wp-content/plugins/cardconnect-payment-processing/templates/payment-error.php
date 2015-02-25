@@ -3,7 +3,7 @@
 <?php
 $payment_details = json_decode( base64_decode( urldecode( $_GET['td'] ) ) );
 
-if ( is_array( $payment_details ) && ! empty( $payment_details ) ) : ?>
+if ( is_object( $payment_details ) && ! empty( $payment_details ) ) : ?>
 
 <hr />
 <ul>
