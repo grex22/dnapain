@@ -14,8 +14,8 @@ if ( ! defined( 'CCPP_PLUGIN_FILE' ) ) {
 
 class CCPP_Core
 {
-	private $pages;
-	private $client_email;
+	static $pages;
+	static $client_email;
 
 	/**
 	 *	Register all of our action hooks and filters
@@ -30,16 +30,16 @@ class CCPP_Core
 	/**
 	 *	All required plugin configuration settings
 	 */
-	public function config()
+	public static function config()
 	{
 		// Are we in test mode? true = yes, false = no
 		$test_mode = true;
 
 		// Define the email notification settings
-		$this->client_email = 'matt@mattkeys.me';
+		self::$client_email = 'matt@mattkeys.me';
 
 		// Define all the pages used by this plugin
-		$this->pages = array(
+		self::$pages = array(
 			'make-a-payment' => array(
 				'title' => 'Make a Payment',
 				'template' => CCPP_PLUGIN_DIR . '/templates/make-a-payment.php'
@@ -85,18 +85,31 @@ class CCPP_Core
 		if ( ! isset( $_POST['errorCode'] ) ) {
 			wp_redirect( home_url() );
 			exit;
-		}		
+		}
+
+		$transaction_details = array(
+			'trans_id'	=> ( isset( $_POST['retref'] ) ) ? $_POST['retref'] : 'N/A',
+			'amount'	=> ( isset( $_POST['amount'] ) ) ? $_POST['amount'] : 'N/A',
+			'ccnum'		=> ( isset( $_POST['masked'] ) ) ? $_POST['masked'] : 'N/A',
+			'ccexp'		=> ( isset( $_POST['expiry'] ) ) ? $_POST['expiry'] : 'N/A',
+			'errorcode'	=> ( isset( $_POST['errorCode'] ) ) ? $_POST['errorCode'] : 'N/A',
+			'errordesc'	=> ( isset( $_POST['errorDesc'] ) ) ? $_POST['errorDesc'] : 'N/A'
+		);
 
 		// We have a failed transation
 		if ( $_POST['errorCode'] !== '00' ) {
 			$this->payment_notification( $_POST, 'failure' );
-			wp_redirect( home_url( 'payment-error' ) );
+
+			$error_url = add_query_arg( array( 'td' => urlencode( base64_encode( json_encode( $transaction_details ) ) ) ), home_url( 'payment-error' ) );
+			wp_redirect( $error_url );
 			exit;
 		}
 
 		// We have a successful transation
 		$this->payment_notification( $_POST, 'success' );
-		wp_redirect( home_url( 'thank-you' ) );
+
+		$success_url = add_query_arg( array( 'td' => urlencode( base64_encode( json_encode( $transaction_details ) ) ) ), home_url( 'thank-you' ) );
+		wp_redirect( $success_url );
 		exit;
 	}
 
@@ -107,8 +120,8 @@ class CCPP_Core
 	{
 		$slug = basename( get_permalink() );
 
-		if ( $slug && isset( $this->pages[ $slug ] ) ) {
-			$page_template = $this->pages[ $slug ]['template'];
+		if ( $slug && isset( self::$pages[ $slug ] ) ) {
+			$page_template = self::$pages[ $slug ]['template'];
 		}
 		
 		return $page_template;
@@ -149,21 +162,23 @@ class CCPP_Core
 				break;
 		}
 
-		wp_mail( $this->client_email, $subject, $message, array('Content-Type: text/html; charset=UTF-8') );
+		wp_mail( self::$client_email, $subject, $message, array('Content-Type: text/html; charset=UTF-8') );
 	}
 
 	/**
 	 *	Fires once during plugin activation to create any missing pages
 	 */
-	static function create_pages()
+	public static function create_pages()
 	{
-		foreach ( $this->pages as $slug => $title ) {
+		self::config();
+
+		foreach ( self::$pages as $slug => $details ) {
 			if ( get_page_by_path( $slug ) ) {
 				continue;
 			}
 
 			$args = array(
-				'post_title'    => $title,
+				'post_title'    => $details['title'],
 				'post_name'		=> $slug,
 				'post_content'  => '',
 				'post_status'   => 'publish',
