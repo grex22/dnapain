@@ -22,8 +22,8 @@ class CCPP_Core
 	 */
 	public function init()
 	{
-		add_action( 'init', array( $this, 'config' ) );
-		add_action( 'init', array( $this, 'route_response' ) );
+		add_action( 'init', array( $this, 'config' ), 0 );
+		add_action( 'init', array( $this, 'route_response' ), 1 );
 		add_filter( 'page_template', array( $this, 'load_template' ) );
 	}
 
