@@ -79,7 +79,7 @@
                   <!-- 496160873888   -->
                   <input type="hidden" name="ccId" value="cvOKhVtJeFUH347D7XXL/tWymEyFjvsFYmhYgbnNBeBUgzLYGnv6Y6TP2jKRULLmUXeG+HrMAdP1L2Gfs8pT4L9snUzhuuePJTassZvgqTAJPhAWWYkiyMXo6mraHwDWjVucKxuhqDn9yuuuVboJ8RvkjL3nIHqqoWBLssWY2XE=" />       
                   <input type="hidden" name="ccSite" value="fts">
-                  <input type="hidden" name="ccPostbackUrl" value="http://dnapain.com/thank-you/">
+                  <input type="hidden" name="ccPostbackUrl" value="<?php echo home_url( '/?cardconnect=true' ); ?>">
                   <button type="submit" name="submit" class="btn btn-primary footer-btn" style="width: 80%;margin-right: 20%;">Make a Payment <i class="fa fa-credit-card pull-right"></i></button>
                   
                 </form>

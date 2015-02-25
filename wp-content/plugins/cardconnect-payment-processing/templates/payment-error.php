@@ -2,7 +2,8 @@
 
 <?php
 $payment_details = json_decode( base64_decode( urldecode( $_GET['td'] ) ) );
-?>
+
+if ( is_array( $payment_details ) && ! empty( $payment_details ) ) : ?>
 
 <hr />
 <ul>
@@ -11,6 +12,8 @@ $payment_details = json_decode( base64_decode( urldecode( $_GET['td'] ) ) );
 	<li>Error: <?php echo $payment_details->errordesc; ?></li>
 	<li>Amount: <?php echo $payment_details->amount; ?></li>
 </ul>
+
+<?php endif; ?>
 
 <p><a href="<?php echo home_url( '/make-a-payment/' ); ?>">Try Again</a></p>
 <p>Please <a href="<?php echo home_url( '/contact-us/' ); ?>">contact us</a> if problems persists.</p>

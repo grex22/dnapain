@@ -2,7 +2,8 @@
 
 <?php
 $payment_details = json_decode( base64_decode( urldecode( $_GET['td'] ) ) );
-?>
+
+if ( is_array( $payment_details ) && ! empty( $payment_details ) ) : ?>
 
 <hr />
 <ul>
@@ -13,5 +14,7 @@ $payment_details = json_decode( base64_decode( urldecode( $_GET['td'] ) ) );
 </ul>
 
 <p>Please print this page for your records.</p>
+
+<?php endif; ?>
 
 <?php get_template_part( 'templates/parts/expandable_list' ); ?>

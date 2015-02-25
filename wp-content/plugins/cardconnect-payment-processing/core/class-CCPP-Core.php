@@ -55,7 +55,7 @@ class CCPP_Core
 		);
 
 		// Define our CardConnect Information
-		define( 'CCPP_SUCCESS_URL', home_url( '/?cardconnect=' . wp_create_nonce( 'cardconnect' ) ) );
+		define( 'CCPP_SUCCESS_URL', home_url( '/?cardconnect=true' ) );
 
 		if ( $test_mode ) {
 			define( 'CCPP_POST_URL', 'https://securepaymentstest.cardconnect.com/hpp/payment/' );
@@ -73,12 +73,6 @@ class CCPP_Core
 	{
 		if ( ! isset( $_GET['cardconnect'] ) ) {
 			return;
-		}
-
-		// Make sure this URL is being reached with our security token
-		if ( ! wp_verify_nonce( $_GET['cardconnect'], 'cardconnect' ) ) {
-			wp_redirect( home_url() );
-			exit;
 		}
 
 		// Make sure this URL contains a response from CardConnect

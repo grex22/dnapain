@@ -20,7 +20,7 @@
           
           -->     
           <input type="hidden" name="ccSite" value="fts">
-          <input type="hidden" name="ccPostbackUrl" value="http://dnapain.com/thank-you/">
+          <input type="hidden" name="ccPostbackUrl" value="<?php echo home_url( '/?cardconnect=true' ); ?>">
           <button type="submit" name="submit" style="background: transparent;color: #06C;border: 0;font-size: 15px;padding: 2px 5px;margin: 0 0 5px 0;"><i class="fa fa-credit-card"></i> Make a Payment</button>
           
         </form>
@@ -41,7 +41,7 @@
           <!-- 496160873888   -->
           <input type="hidden" name="ccId" value="I2iP4irvKDM8MMN/RUnJY3cZn+tYF7arGdXVfzxeCESnFOsajsIcBEejW2tGwpzich5BTnLQ/lsAmzHlxh0X1efWqiyrKLe/jyZRWrcauMcwgNHhauIriWTxDvhIbJ2Fq6thni9sogy44RHvtV65KU23ghVjx6bzQ1ew4aFclbo=" />       
           <input type="hidden" name="ccSite" value="fts">
-          <input type="hidden" name="ccPostbackUrl" value="http://dnapain.com/thank-you/">
+          <input type="hidden" name="ccPostbackUrl" value="<?php echo home_url( '/?cardconnect=true' ); ?>">
           <button type="submit" name="submit" style="background: transparent;color: #06C;border: 0;font-size: 15px;padding: 2px 5px;margin: 0 0 5px 0;"><i class="fa fa-credit-card"></i> Make a Payment</button>
           
         </form>
